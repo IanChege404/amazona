@@ -16,6 +16,7 @@ import { Separator } from '@/components/ui/separator'
 import BrowsingHistoryList from '@/components/shared/browsing-history-list'
 import RatingSummary from '@/components/shared/product/rating-summary'
 import ProductSlider from '@/components/shared/product/product-slider'
+import { ProductRecommendations } from '@/components/shared/product-recommendations'
 import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata(props: {
@@ -165,6 +166,13 @@ export default async function ProductDetails(props: {
         <ProductSlider
           products={relatedProducts.data}
           title={t('Product.Best Sellers in', { name: product.category })}
+        />
+      </section>
+      <section className='mt-10'>
+        <ProductRecommendations
+          productId={product._id}
+          type='similar'
+          limit={4}
         />
       </section>
       <section>
