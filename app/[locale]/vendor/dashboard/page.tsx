@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { auth } from '@/auth'
 import { redirect } from 'next/navigation'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import { TrendingUp, Package, ShoppingCart, DollarSign } from 'lucide-react'
 import { connectToDatabase } from '@/lib/db'
 import Vendor from '@/lib/db/models/vendor.model'
@@ -173,10 +174,10 @@ export default async function VendorDashboard() {
                   <div key={p._id} className='flex items-center justify-between py-2 border-b last:border-0'>
                     <span className='text-sm font-medium truncate max-w-[60%]'>{p.name}</span>
                     <div className='flex items-center gap-3'>
-                      <span className='text-sm text-muted-foreground'>${p.price?.toFixed(2)}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${p.isPublished ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-600'}`}>
+                      <span className='text-sm text-muted-foreground'>${(p.price ?? 0).toFixed(2)}</span>
+                      <Badge variant={p.isPublished ? 'default' : 'secondary'} className='text-xs'>
                         {p.isPublished ? 'Live' : 'Draft'}
-                      </span>
+                      </Badge>
                     </div>
                   </div>
                 ))}

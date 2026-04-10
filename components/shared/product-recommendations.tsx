@@ -54,7 +54,7 @@ function ProductCard({ product }: { product: Product }) {
           </Badge>
           <p className='font-medium text-sm line-clamp-2 mb-1'>{product.name}</p>
           <div className='flex items-center justify-between'>
-            <span className='font-bold text-sm'>${product.price?.toFixed(2)}</span>
+            <span className='font-bold text-sm'>${(product.price ?? 0).toFixed(2)}</span>
             {product.numReviews > 0 && (
               <div className='flex items-center gap-1 text-xs text-muted-foreground'>
                 <Star className='w-3 h-3 fill-yellow-400 text-yellow-400' />

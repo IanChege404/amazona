@@ -70,6 +70,7 @@ export function OrderTracking({
     if (!pusherKey || !orderId) return
 
     let pusherInstance: PusherInstance | null = null
+    let channel: PusherChannel | null = null
 
     const initPusher = async () => {
       try {
@@ -84,7 +85,7 @@ export function OrderTracking({
           setIsConnected(true)
         })
 
-        const channel = pusherInstance.subscribe(`order-${orderId}`)
+        channel = pusherInstance.subscribe(`order-${orderId}`)
 
         channel.bind('status-updated', (data: OrderStatus) => {
           setCurrentStatus(data.status)
@@ -103,8 +104,7 @@ export function OrderTracking({
     return () => {
       if (pusherInstance) {
         pusherInstance.connection.unbind_all()
-        const channel = pusherInstance.subscribe(`order-${orderId}`)
-        channel.unbind_all()
+        if (channel) channel.unbind_all()
         pusherInstance.disconnect()
       }
     }

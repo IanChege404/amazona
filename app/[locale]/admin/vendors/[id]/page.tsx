@@ -31,6 +31,16 @@ interface PopulatedUser {
 
 type PopulatedVendor = Omit<IVendor, 'userId'> & { userId: PopulatedUser }
 
+function isPopulatedVendor(vendor: unknown): vendor is PopulatedVendor {
+  if (!vendor || typeof vendor !== 'object') return false
+  const v = vendor as Record<string, unknown>
+  return (
+    typeof v.userId === 'object' &&
+    v.userId !== null &&
+    typeof (v.userId as Record<string, unknown>).name === 'string'
+  )
+}
+
 export default async function AdminVendorDetailPage({
   params,
 }: {
@@ -40,11 +50,13 @@ export default async function AdminVendorDetailPage({
 
   await connectToDatabase()
 
-  const vendor = await Vendor.findById(id).populate('userId', 'name email').lean() as PopulatedVendor | null
+  const rawVendor = await Vendor.findById(id).populate('userId', 'name email').lean()
 
-  if (!vendor) {
+  if (!rawVendor || !isPopulatedVendor(rawVendor)) {
     notFound()
   }
+
+  const vendor = rawVendor
 
   const products = await Product.find({ vendorId: id })
     .sort({ createdAt: -1 })
