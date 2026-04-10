@@ -65,4 +65,9 @@ const orderSchema = new Schema<IOrder>(
 const Order =
   (models.Order as Model<IOrder>) || model<IOrder>('Order', orderSchema)
 
+// Indexes for query performance
+orderSchema.index({ user: 1, createdAt: -1 })
+orderSchema.index({ isPaid: 1, isDelivered: 1 })
+orderSchema.index({ createdAt: -1 })
+
 export default Order
