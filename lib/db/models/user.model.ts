@@ -23,4 +23,8 @@ const userSchema = new Schema<IUser>(
 
 const User = (models.User as Model<IUser>) || model<IUser>('User', userSchema)
 
+// Indexes for query performance
+userSchema.index({ createdAt: -1 })
+userSchema.index({ role: 1 })
+
 export default User

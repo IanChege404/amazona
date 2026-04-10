@@ -44,4 +44,9 @@ const reviewSchema = new Schema<IReview>(
 const Review =
   (models.Review as Model<IReview>) || model<IReview>('Review', reviewSchema)
 
+// Indexes for query performance
+reviewSchema.index({ product: 1, createdAt: -1 })
+reviewSchema.index({ user: 1 })
+reviewSchema.index({ rating: -1 })
+
 export default Review

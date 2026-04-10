@@ -180,6 +180,22 @@
     "Try again": "حاول مرة أخرى",
     "Back To Home": "العودة إلى الرئيسية"
   },
+  "Store": {
+    "Vendor not found": "البائع غير موجود",
+    "reviews": "تقييمات",
+    "products": "منتجات",
+    "orders_completed": "طلبات مكتملة",
+    "about_store": "حول هذا المتجر",
+    "contact_info": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "featured_products": "المنتجات المميزة",
+    "no_products": "لا توجد منتجات متاحة بعد",
+    "interested_in_products": "هل أنت مهتم بمزيد من المنتجات؟",
+    "explore_more_products": "تصفح جميع منتجات هذا البائع",
+    "view_all_products": "عرض جميع المنتجات"
+  },
   "Admin": {
     "Deleted User": "مستخدم محذوف",
     "Overview": "نظرة عامة",
