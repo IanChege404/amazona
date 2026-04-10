@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazona - Offline</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #1f2937;
+    }
+
+    p {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .tips {
+      background: #f3f4f6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .tips h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+
+    .tips ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tips li {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .tips li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #ef4444;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef4444;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    .retry-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .retry-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .retry-button:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📱</div>
+
+    <h1>You're Offline</h1>
+    <p>It looks like you've lost your internet connection. Don't worry, we're constantly trying to reconnect.</p>
+
+    <div class="tips">
+      <h2>While you wait:</h2>
+      <ul>
+        <li>Check your Wi-Fi or mobile connection</li>
+        <li>Try moving closer to your router</li>
+        <li>Restart your device's network settings</li>
+        <li>You can still browse previously loaded content</li>
+      </ul>
+    </div>
+
+    <button class="retry-button" onclick="location.reload()">Retry</button>
+
+    <div class="status">
+      <div class="status-dot"></div>
+      <span>No internet connection</span>
+    </div>
+  </div>
+
+  <script>
+    // Check for connection every 3 seconds
+    const checkConnection = async () => {
+      try {
+        const response = await fetch('/api/system/health', { method: 'HEAD' })
+        if (response.ok) {
+          // Connection restored, reload
+          location.reload()
+        }
+      } catch (e) {
+        // Still offline, keep checking
+      }
+    }
+
+    // Check every 3 seconds
+    setInterval(checkConnection, 3000)
+
+    // Listen for online event
+    window.addEventListener('online', () => {
+      location.reload()
+    })
+  </script>
+</body>
+</html>

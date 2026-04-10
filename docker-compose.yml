@@ -1,0 +1,119 @@
+version: '3.8'
+
+services:
+  # Next.js Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    container_name: amazona-app
+    env_file:
+      - .env.docker
+    ports:
+      - '3001:3000'
+    environment:
+      - NODE_ENV=production
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET:-dev-secret-key-change-in-production}
+      - NEXTAUTH_URL=http://localhost:3001
+      - NEXTAUTH_TRUST_HOST=true
+      - NEXT_PUBLIC_BASE_URL=http://localhost:3001
+      - NEXT_PUBLIC_SERVER_URL=http://localhost:3001
+      - MONGODB_URI=mongodb://admin:password@mongo:27017/amazona?authSource=admin
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY:-sk_test_your_stripe_secret_key}
+      - STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_KEY:-pk_test_your_stripe_publishable_key}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET:-whsec_your_webhook_secret}
+      - UPSTASH_REDIS_REST_URL=http://redis:6379
+      - UPSTASH_REDIS_REST_TOKEN=${UPSTASH_REDIS_REST_TOKEN:-dev-token}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-sk-ant-your-claude-api-key}
+      - PUSHER_APP_ID=${PUSHER_APP_ID:-your_pusher_app_id}
+      - PUSHER_KEY=${PUSHER_KEY:-your_pusher_key}
+      - PUSHER_SECRET=${PUSHER_SECRET:-your_pusher_secret}
+      - PUSHER_CLUSTER=${PUSHER_CLUSTER:-mt1}
+      - SENTRY_AUTH_TOKEN=${SENTRY_AUTH_TOKEN:-your_sentry_auth_token}
+      - RESEND_API_KEY=${RESEND_API_KEY:-re_your_resend_api_key}
+      - UPLOADTHING_SECRET=${UPLOADTHING_SECRET:-sk_live_your_uploadthing_secret}
+      - UPLOADTHING_APP_ID=${UPLOADTHING_APP_ID:-your_uploadthing_app_id}
+      - EMAIL_FROM=${EMAIL_FROM:-noreply@amazona.local}
+      - SMTP_HOST=mailhog
+      - SMTP_PORT=1025
+      - SMTP_USER=
+      - SMTP_PASS=
+      - CRON_SECRET=${CRON_SECRET:-dev-cron-secret}
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      mailhog:
+        condition: service_started
+    healthcheck:
+      test: ['CMD', 'wget', '--quiet', '--tries=1', '--spider', 'http://localhost:3000/api/system/health']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - amazona-network
+    restart: unless-stopped
+
+  # MongoDB Database
+  mongo:
+    image: mongo:7.0
+    container_name: amazona-mongo
+    ports:
+      - '27018:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: amazona
+    volumes:
+      - mongo-data:/data/db
+      - mongo-config:/data/configdb
+      - ./docker/mongodb/init:/docker-entrypoint-initdb.d
+    networks:
+      - amazona-network
+    healthcheck:
+      test: ['CMD', 'mongosh', '--eval', 'db.adminCommand("ping")']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Redis Cache and Rate Limiting
+  redis:
+    image: redis:7-alpine
+    container_name: amazona-redis
+    ports:
+      - '6380:6379'
+    volumes:
+      - redis-data:/data
+    networks:
+      - amazona-network
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # Mailhog for Email Testing
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: amazona-mailhog
+    ports:
+      - '1025:1025'  # SMTP port
+      - '8025:8025'  # Web UI port
+    networks:
+      - amazona-network
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+  mongo-config:
+  redis-data:
+
+networks:
+  amazona-network:
+    driver: bridge
