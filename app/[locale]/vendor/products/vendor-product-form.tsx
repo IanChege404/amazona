@@ -25,6 +25,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { toSlug } from '@/lib/utils'
 import { IProductInput } from '@/types'
 import { AIDescriptionButton } from '@/components/vendor/ai-description-button'
+import { BackgroundRemoveButton } from '@/components/vendor/background-remove-button'
 
 const productDefaultValues: IProductInput =
   process.env.NODE_ENV === 'development'
@@ -257,18 +258,29 @@ const VendorProductForm = ({ vendorId, vendorName }: VendorProductFormProps) => 
                             width={100}
                             height={100}
                           />
-                          <button
-                            type="button"
-                            onClick={() => {
-                              form.setValue(
-                                'images',
-                                images.filter((img: string) => img !== image)
-                              )
-                            }}
-                            className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-sm flex items-center justify-center text-white text-sm font-medium"
-                          >
-                            Remove
-                          </button>
+                          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-sm flex flex-col items-center justify-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                form.setValue(
+                                  'images',
+                                  images.filter((img: string) => img !== image)
+                                )
+                              }}
+                              className="text-white text-xs font-medium bg-red-600 px-2 py-0.5 rounded"
+                            >
+                              Remove
+                            </button>
+                            <BackgroundRemoveButton
+                              imageUrl={image}
+                              onResult={(base64: string) => {
+                                form.setValue(
+                                  'images',
+                                  images.map((img: string) => (img === image ? base64 : img))
+                                )
+                              }}
+                            />
+                          </div>
                         </div>
                       ))}
                       <FormControl>
