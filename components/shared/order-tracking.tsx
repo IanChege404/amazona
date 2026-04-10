@@ -91,7 +91,9 @@ export function OrderTracking({
           setCurrentStatus(data.status)
           setStatusMessages((prev) => [data, ...prev].slice(0, 10))
 
-          if (data.status === 'paid') setCurrentIsPaid(true)
+          if (data.status === 'paid' || data.status === 'processing' || data.status === 'shipped') {
+            setCurrentIsPaid(true)
+          }
           if (data.status === 'delivered') setCurrentIsDelivered(true)
         })
       } catch (error) {

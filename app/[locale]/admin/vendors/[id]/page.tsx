@@ -199,9 +199,9 @@ export default async function AdminVendorDetailPage({
                 <div className='col-span-2'>
                   <p className='font-semibold text-muted-foreground'>Address</p>
                   <p>
-                    {vendor.address.street && `${vendor.address.street}, `}
-                    {vendor.address.city && `${vendor.address.city}, `}
-                    {vendor.address.country}
+                    {[vendor.address.street, vendor.address.city, vendor.address.country]
+                      .filter(Boolean)
+                      .join(', ')}
                   </p>
                 </div>
               )}

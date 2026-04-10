@@ -68,7 +68,7 @@ export default async function VendorDashboard() {
     recentProducts = await Product.find({ vendorId: vendor._id })
       .sort({ createdAt: -1 })
       .limit(5)
-      .select('name price isPublished')
+      .select('_id name price isPublished')
       .lean()
   }
 
