@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { connectToDatabase } from '@/lib/db'
-import Vendor from '@/lib/db/models/vendor.model'
+import Vendor, { IVendor } from '@/lib/db/models/vendor.model'
 import Product from '@/lib/db/models/product.model'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -24,6 +24,13 @@ export const metadata: Metadata = {
   title: 'Admin - Vendor Detail',
 }
 
+interface PopulatedUser {
+  name: string
+  email: string
+}
+
+type PopulatedVendor = Omit<IVendor, 'userId'> & { userId: PopulatedUser }
+
 export default async function AdminVendorDetailPage({
   params,
 }: {
@@ -33,7 +40,7 @@ export default async function AdminVendorDetailPage({
 
   await connectToDatabase()
 
-  const vendor = await Vendor.findById(id).populate('userId', 'name email').lean()
+  const vendor = await Vendor.findById(id).populate('userId', 'name email').lean() as PopulatedVendor | null
 
   if (!vendor) {
     notFound()
@@ -47,7 +54,7 @@ export default async function AdminVendorDetailPage({
   const totalProducts = await Product.countDocuments({ vendorId: id })
   const publishedProducts = await Product.countDocuments({ vendorId: id, isPublished: true })
 
-  const vendorUser = vendor.userId as unknown as { name: string; email: string }
+  const vendorUser = vendor.userId
 
   return (
     <div className='space-y-6'>

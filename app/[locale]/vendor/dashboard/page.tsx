@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   title: 'Vendor Dashboard',
 }
 
+interface RecentProduct {
+  _id: string
+  name: string
+  price: number
+  isPublished: boolean
+}
+
 export default async function VendorDashboard() {
   const session = await auth()
 
@@ -43,7 +50,7 @@ export default async function VendorDashboard() {
 
   // Fetch real stats if vendor is approved
   let stats = { totalRevenue: 0, totalOrders: 0, avgOrderValue: 0, totalProducts: 0 }
-  let recentProducts: { _id: string; name: string; price: number; isPublished: boolean }[] = []
+  let recentProducts: RecentProduct[] = []
 
   if (vendor.status === 'approved') {
     const statsResult = await getVendorStats(vendor._id.toString())

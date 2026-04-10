@@ -18,6 +18,22 @@ interface OrderTrackingProps {
   isDelivered?: boolean
 }
 
+interface PusherChannel {
+  bind: (event: string, callback: (data: OrderStatus) => void) => void
+  unbind_all: () => void
+}
+
+interface PusherConnection {
+  bind: (event: string, callback: () => void) => void
+  unbind_all: () => void
+}
+
+interface PusherInstance {
+  disconnect: () => void
+  subscribe: (channel: string) => PusherChannel
+  connection: PusherConnection
+}
+
 const STATUS_STEPS = [
   { key: 'placed', label: 'Order Placed', icon: Clock },
   { key: 'paid', label: 'Payment Confirmed', icon: CheckCircle2 },
@@ -53,7 +69,7 @@ export function OrderTracking({
     const pusherKey = process.env.NEXT_PUBLIC_PUSHER_KEY
     if (!pusherKey || !orderId) return
 
-    let pusherInstance: { disconnect: () => void; subscribe: (channel: string) => { bind: (event: string, callback: (data: OrderStatus) => void) => void; unbind_all: () => void }; connection: { bind: (event: string, callback: () => void) => void; unbind_all: () => void } } | null = null
+    let pusherInstance: PusherInstance | null = null
 
     const initPusher = async () => {
       try {
