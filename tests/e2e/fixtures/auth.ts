@@ -18,11 +18,12 @@ async function loginWithCredentials(
   credentials: { email: string; password: string }
 ) {
   await page.goto('/sign-in')
-  await expect(page.getByRole('heading', { name: 'Sign In' })).toBeVisible()
+  await expect(page.getByLabel('Email')).toBeVisible()
+  await expect(page.getByLabel('Password')).toBeVisible()
 
   await page.getByLabel('Email').fill(credentials.email)
   await page.getByLabel('Password').fill(credentials.password)
-  await page.getByRole('button', { name: 'Sign In' }).click()
+  await page.getByRole('button', { name: 'Sign In', exact: true }).click()
 
   await page.waitForURL((url) => !url.pathname.includes('/sign-in'))
 }

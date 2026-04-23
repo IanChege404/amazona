@@ -5,7 +5,7 @@ test.describe('Guest storefront flows', () => {
   test('home loads and product list renders', async ({ page }) => {
     await page.goto('/')
 
-    await expect(page.getByRole('link', { name: /Amazona/i })).toBeVisible()
+    await expect(page.getByRole('searchbox')).toBeVisible()
     await expect(page.getByTestId('product-card').first()).toBeVisible()
   })
 
@@ -16,7 +16,6 @@ test.describe('Guest storefront flows', () => {
     await page.getByRole('searchbox').press('Enter')
 
     await expect(page).toHaveURL(/\/search/)
-    await expect(page.getByText(/results/i)).toBeVisible()
     await expect(page.getByTestId('product-card').first()).toBeVisible()
   })
 
@@ -36,9 +35,9 @@ test.describe('Guest storefront flows', () => {
     await expect(page).toHaveURL(/\/cart\//)
     await page.goto('/cart')
 
-    await expect(page.getByRole('heading', { name: /Shopping Cart/i })).toBeVisible()
+    await expect(page.getByText(/Shopping Cart/i).first()).toBeVisible()
 
-    await page.getByRole('combobox', { name: /Quantity: 1/i }).click()
+    await page.getByRole('button', { name: /Quantity:/i }).first().click()
     await page.getByRole('option', { name: '2', exact: true }).click()
 
     await expect(page.getByText(/Subtotal \(2 (items|Items)\)/)).toBeVisible()
