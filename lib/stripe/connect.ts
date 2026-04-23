@@ -109,14 +109,15 @@ export async function createPaymentIntentWithTransfer(
   vendorStripeAccountId: string,
   commissionRate: number,
   orderId: string,
-  description?: string
+  description?: string,
+  currency: string = 'kes'
 ) {
   try {
     const platformFee = calculatePlatformFee(amountInCents, commissionRate)
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount: amountInCents,
-      currency: 'usd',
+      currency: currency.toLowerCase(),
       description: description || `Order ${orderId}`,
       transfer_data: {
         destination: vendorStripeAccountId,

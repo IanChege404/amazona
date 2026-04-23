@@ -1,3 +1,6 @@
+import fs from 'fs'
+import path from 'path'
+
 import BrowsingHistoryList from '@/components/shared/browsing-history-list'
 import { HomeCard } from '@/components/shared/home/home-card'
 import { HomeCarousel } from '@/components/shared/home/home-carousel'
@@ -12,6 +15,28 @@ import {
 import { getSetting } from '@/lib/actions/setting.actions'
 import { toSlug } from '@/lib/utils'
 import { getTranslations } from 'next-intl/server'
+
+const PUBLIC_DIR = path.join(process.cwd(), 'public')
+const HOME_CATEGORY_FALLBACK_IMAGE = '/images/app.png'
+
+function resolveCategoryImage(category: string) {
+  const slug = toSlug(category)
+  const candidates = [
+    `/images/${slug}.jpg`,
+    `/images/${slug}.jpeg`,
+    `/images/${slug}.png`,
+    `/images/${slug}.webp`,
+  ]
+
+  for (const candidate of candidates) {
+    const candidatePath = path.join(PUBLIC_DIR, candidate)
+    if (fs.existsSync(candidatePath)) {
+      return candidate
+    }
+  }
+
+  return HOME_CATEGORY_FALLBACK_IMAGE
+}
 
 export default async function HomePage() {
   const t = await getTranslations('Home')
@@ -38,8 +63,8 @@ export default async function HomePage() {
       },
       items: categories.map((category) => ({
         name: category,
-        image: `/images/${toSlug(category)}.jpg`,
-        href: `/search?category=${category}`,
+        image: resolveCategoryImage(category),
+        href: `/search?category=${encodeURIComponent(category)}`,
       })),
     },
     {
@@ -55,7 +80,7 @@ export default async function HomePage() {
       items: bestSellers,
       link: {
         text: t('View All'),
-        href: '/search?tag=new-arrival',
+        href: '/search?tag=best-seller',
       },
     },
     {
@@ -63,7 +88,7 @@ export default async function HomePage() {
       items: featureds,
       link: {
         text: t('Shop Now'),
-        href: '/search?tag=new-arrival',
+        href: '/search?tag=featured',
       },
     },
   ]

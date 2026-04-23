@@ -19,9 +19,9 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { UploadButton } from '@/lib/uploadthing'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import { UploadButton } from '@/lib/uploadthing'
 
 const defaultValues: IVendorApplication = {
   businessName: '',
@@ -251,7 +251,7 @@ export default function VendorApplicationForm() {
                       </div>
                     )}
                     <UploadButton
-                      endpoint='imageUploader'
+                      endpoint='vendorLogo'
                       onClientUploadComplete={(res) => {
                         if (res?.[0]?.url) {
                           setLogo(res[0].url)
@@ -281,7 +281,7 @@ export default function VendorApplicationForm() {
                       </div>
                     )}
                     <UploadButton
-                      endpoint='imageUploader'
+                      endpoint='bannerImage'
                       onClientUploadComplete={(res) => {
                         if (res?.[0]?.url) {
                           setBanner(res[0].url)

@@ -1,14 +1,7 @@
 import createMiddleware from 'next-intl/middleware'
 import { routing } from './i18n/routing'
 import { NextRequest, NextResponse } from 'next/server'
-
-// Lightweight auth check - avoid importing heavy auth.ts module
-const checkAuth = async (req: NextRequest): Promise<boolean> => {
-  const sessionToken = req.cookies.get('authjs.session-token')?.value ||
-                      req.cookies.get('__Secure-authjs.session-token')?.value
-
-  return !!sessionToken
-}
+import { getToken } from 'next-auth/jwt'
 
 const publicPages = [
   '/',
@@ -37,20 +30,30 @@ export async function middleware(req: NextRequest) {
 
   if (isPublicPage) {
     return intlMiddleware(req)
-  } else {
-    const isAuthenticated = await checkAuth(req)
-    if (!isAuthenticated) {
-      const newUrl = new URL(
-        `/sign-in?callbackUrl=${
-          encodeURIComponent(req.nextUrl.pathname) || '/'
-        }`,
-        req.nextUrl.origin
-      )
-      return NextResponse.redirect(newUrl)
-    } else {
-      return intlMiddleware(req)
-    }
   }
+
+  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET })
+
+  if (!token?.sub) {
+    const newUrl = new URL(
+      `/sign-in?callbackUrl=${encodeURIComponent(req.nextUrl.pathname) || '/'}`,
+      req.nextUrl.origin
+    )
+    return NextResponse.redirect(newUrl)
+  }
+
+  const pathname = req.nextUrl.pathname
+  const role = (token.role as string) || 'user'
+
+  if (pathname.includes('/admin') && role !== 'admin') {
+    return NextResponse.redirect(new URL('/', req.nextUrl.origin))
+  }
+
+  if (pathname.includes('/vendor') && role !== 'vendor' && role !== 'admin') {
+    return NextResponse.redirect(new URL('/', req.nextUrl.origin))
+  }
+
+  return intlMiddleware(req)
 }
 
 export const config = {

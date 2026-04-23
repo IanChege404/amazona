@@ -1,52 +1,829 @@
-GET http://localhost:3001/_next/static/css/41742a78284d1692.css 404 (Not Found)
-:3001/_next/static/css/d5d801926ba4191d.css:1  GET http://localhost:3001/_next/static/css/d5d801926ba4191d.css net::ERR_ABORTED 404 (Not Found)
-:3001/_next/static/media/93f479601ee12b01-s.p.woff2:1  GET http://localhost:3001/_next/static/media/93f479601ee12b01-s.p.woff2 net::ERR_ABORTED 404 (Not Found)
-:3001/_next/static/media/4cf2300e9c8272f7-s.p.woff2:1  GET http://localhost:3001/_next/static/media/4cf2300e9c8272f7-s.p.woff2 net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp25-1.jpg&w=750&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/1517-bcd6a828bf973d71.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/webpack-31c069fb94ebf4aa.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/4bd1b696-30bfa5b1e950ba88.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/icons/logo.svg 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/main-app-2e5788c1099c469f.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp25-1.jpg&w=96&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp26-1.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp22-1.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp24-1.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp23-1.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp26-2.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp23-2.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/aaea2bcf-d3ea70f6d9419746.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/4562-06f02b8e3b4c3def.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/8173-53727ff1ad88aa13.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/2938-87eacbf6d9698f5f.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/2058-b99e67c3daf66bf2.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/7266-85a00921da5597ce.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/8472-f9c9a5aeaf66b0b7.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/7970-eda602c2eb7c05dc.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/9343-ecdbe83dafc5d935.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/1793-ebdc238340e54d23.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/6020-8178265ed8c87780.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/3876-57eb960426c62ec7.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp22-2.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp24-2.jpg&w=640&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/6763-8b8dc8dced332899.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/4637-ff960b32e6a8a61d.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/6672-28aa6082eb499668.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/5959-eec9bf90b1a79b09.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/4252-657fe7a590c15afa.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/5553-8d2318fa1bc33471.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/app/%5Blocale%5D/(root)/layout-cc0119e336b0228f.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/846-81748830dfa70988.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/app/%5Blocale%5D/layout-e8c676bd7053bccc.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/app/%5Blocale%5D/error-296b8f90facd74b8.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/4826-151a9a8e2ca2d338.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/app/%5Blocale%5D/not-found-e1d6cb57b80d9434.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/483-db7c157aebd445b6.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/3365-bc87f52774860ad4.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/6641-3334108576302eb0.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/4620-1f60d428128528ae.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/image?url=%2Fimages%2Fp25-2.jpg&w=96&q=75 400 (Bad Request)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/8287-da04bb3998525690.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/7003-aa9e9188f61fd2ec.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/app/%5Blocale%5D/(root)/product/%5Bslug%5D/page-881225d76c33211d.js net::ERR_ABORTED 404 (Not Found)
-dickies-mens-relaxed-fit-carpenter-jean:1  GET http://localhost:3001/_next/static/chunks/app/%5Blocale%5D/(auth)/layout-1b61e4f5e3f162aa.js net::ERR_ABORTED 404 (Not Found)
+~/Dev/nextjs-amazona  main +16 !52 ?18  npm run lint && npm run test -- --run && npm run build
+
+> nextjs-amazona@0.1.0 lint
+> next lint
+
+
+./app/[locale]/(root)/cart/page.tsx
+51:6  Warning: React Hook useEffect has missing dependencies: 'items' and 'itemsPrice'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./app/[locale]/(root)/store/[vendorSlug]/page.tsx
+5:10  Warning: 'Badge' is defined but never used.  @typescript-eslint/no-unused-vars
+66:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+77:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./app/[locale]/admin/products/product-form.tsx
+4:8  Warning: 'Image' is defined but never used.  @typescript-eslint/no-unused-vars
+8:10  Warning: 'Card' is defined but never used.  @typescript-eslint/no-unused-vars
+8:16  Warning: 'CardContent' is defined but never used.  @typescript-eslint/no-unused-vars
+22:10  Warning: 'UploadButton' is defined but never used.  @typescript-eslint/no-unused-vars
+74:11  Warning: 'toast' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./app/[locale]/vendor/products/vendor-product-form.tsx
+4:8  Warning: 'Image' is defined but never used.  @typescript-eslint/no-unused-vars
+8:10  Warning: 'Card' is defined but never used.  @typescript-eslint/no-unused-vars
+8:16  Warning: 'CardContent' is defined but never used.  @typescript-eslint/no-unused-vars
+22:10  Warning: 'UploadButton' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/admin/reconciliation/route.ts
+7:3  Warning: 'getDiscrepancies' is defined but never used.  @typescript-eslint/no-unused-vars
+14:42  Warning: 'req' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/analytics/webhooks/metrics/route.ts
+6:3  Warning: 'getWebhookEventLogs' is defined but never used.  @typescript-eslint/no-unused-vars
+7:3  Warning: 'getWebhookStats' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'getFailedWebhooks' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'getWebhookSuccessRate' is defined but never used.  @typescript-eslint/no-unused-vars
+10:3  Warning: 'getWebhookTrends' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/analytics/webhooks/stats/route.ts
+7:3  Warning: 'getWebhookSuccessRate' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/cron/run-reconciliation/route.ts
+22:56  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./app/api/system/health/route.ts
+14:42  Warning: 'request' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/system/performance/route.ts
+9:27  Warning: '_request' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/system/rate-limit-status/route.ts
+21:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./app/api/vendor/webhooks/[webhookId]/route.ts
+9:3  Warning: 'testVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/vendor/webhooks/route.ts
+7:3  Warning: 'updateVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'deleteVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'testVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/webhooks/replays/route.ts
+7:3  Warning: 'executeWebhookReplay' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'cancelWebhookReplay' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'getReplayStats' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/admin/reconciliation-dashboard.tsx
+24:3  Warning: 'DialogDescription' is defined but never used.  @typescript-eslint/no-unused-vars
+61:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/admin/webhook-analytics-dashboard.tsx
+5:3  Warning: 'LineChart' is defined but never used.  @typescript-eslint/no-unused-vars
+6:3  Warning: 'Line' is defined but never used.  @typescript-eslint/no-unused-vars
+7:3  Warning: 'BarChart' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'Bar' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'XAxis' is defined but never used.  @typescript-eslint/no-unused-vars
+10:3  Warning: 'YAxis' is defined but never used.  @typescript-eslint/no-unused-vars
+11:3  Warning: 'CartesianGrid' is defined but never used.  @typescript-eslint/no-unused-vars
+13:3  Warning: 'Legend' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/admin/webhook-event-logs-viewer.tsx
+31:11  Warning: 'PaginatedResponse' is defined but never used.  @typescript-eslint/no-unused-vars
+82:6  Warning: React Hook useEffect has a missing dependency: 'pagination.limit'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/admin/webhook-tester.tsx
+152:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/admin/webhook-trends-chart.tsx
+5:3  Warning: 'LineChart' is defined but never used.  @typescript-eslint/no-unused-vars
+26:10  Warning: 'WebhookEventType' is defined but never used.  @typescript-eslint/no-unused-vars
+57:33  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+98:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/shared/ai/background-remover.tsx
+138:29  Warning: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+138:36  Warning: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+
+./components/shared/error-boundary.tsx
+51:13  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+51:79  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+106:23  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+106:44  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./components/shared/pwa-initializer.tsx
+4:33  Warning: 'requestNotificationPermission' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/vendor/vendor-webhooks-management.tsx
+4:29  Warning: 'CardDescription' is defined but never used.  @typescript-eslint/no-unused-vars
+4:58  Warning: 'CardTitle' is defined but never used.  @typescript-eslint/no-unused-vars
+22:3  Warning: 'Edit' is defined but never used.  @typescript-eslint/no-unused-vars
+64:6  Warning: React Hook useEffect has a missing dependency: 'fetchWebhooks'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+81:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+132:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+166:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+197:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/actions/order.actions.ts
+29:33  Warning: 'integrateOrderPaid' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/actions/reconciliation.ts
+22:86  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+28:84  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+29:62  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+88:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+91:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+134:74  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+143:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+145:69  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+293:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+297:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+302:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+307:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+312:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+371:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+380:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/actions/vendor-webhook.ts
+8:10  Warning: 'dispatchWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+9:10  Warning: 'recordWebhookDelivery' is defined but never used.  @typescript-eslint/no-unused-vars
+68:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+80:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+98:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+111:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+203:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+323:15  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+331:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+341:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+354:40  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+367:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/actions/webhook-analytics.ts
+6:3  Warning: 'WebhookMetric' is defined but never used.  @typescript-eslint/no-unused-vars
+7:3  Warning: 'WebhookTrend' is defined but never used.  @typescript-eslint/no-unused-vars
+59:3  Warning: 'latency' is defined but never used.  @typescript-eslint/no-unused-vars
+105:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+110:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+117:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+138:9  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+162:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+175:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+188:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+193:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+202:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+223:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+223:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+237:65  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+238:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+238:57  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+244:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+244:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+298:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+310:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/actions/webhook-replay.ts
+1:8  Warning: 'crypto' is defined but never used.  @typescript-eslint/no-unused-vars
+13:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+116:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+155:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+189:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+197:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+211:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+221:67  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+267:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+270:17  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+336:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+344:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+356:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+414:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+425:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+426:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+427:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+429:59  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/api-handler.ts
+28:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+33:14  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/cache/query-cache.ts
+34:22  Warning: 'staleTime' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+179:55  Warning: 'namespace' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+258:1  Warning: Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+./lib/data.js
+3:15  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+4:18  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+5:21  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./lib/db/models/payment.model.ts
+12:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/db/models/payout.model.ts
+18:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/debug.ts
+13:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+24:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+65:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+66:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/models/reconciliation.ts
+16:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+33:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+54:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+70:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+192:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+193:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+200:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+201:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+205:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+206:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+210:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+211:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+216:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/models/webhook-replay.ts
+21:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/monitoring.ts
+6:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+12:14  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/rate-limit.ts
+80:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/sentry.ts
+10:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+15:12  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+65:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+122:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+138:83  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+175:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/stripe/subscriptions.ts
+64:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/subscription-enforcement.ts
+30:11  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/system/health-metrics.ts
+51:9  Warning: 'uptime' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./lib/utils.js
+24:14  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+25:24  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+26:22  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+79:1  Warning: Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any').
+
+./lib/validator.js
+4:13  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+5:15  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./lib/webhooks/dispatcher.ts
+41:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+58:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+84:3  Warning: 'filters' is defined but never used.  @typescript-eslint/no-unused-vars
+206:45  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/handlers.ts
+65:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+71:20  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+107:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+134:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+157:43  Warning: 'request' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/webhooks/integration.ts
+48:17  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+92:66  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+188:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+263:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+277:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+301:56  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/stripe-handler.ts
+15:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+85:60  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+112:57  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+134:45  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+158:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+178:41  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+202:43  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+219:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+237:4  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/triggers.ts
+21:35  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+23:17  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+32:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+39:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+39:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+46:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+58:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+70:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+80:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+80:83  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+91:57  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+102:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+112:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+122:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+133:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+144:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+155:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+168:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+180:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/types.ts
+55:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+103:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+112:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+120:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+120:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+127:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+135:30  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+143:26  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+150:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+
+> nextjs-amazona@0.1.0 test
+> vitest --run
+
+
+ RUN  v4.1.3 /home/devmahnx/Dev/nextjs-amazona
+
+ ✓ __tests__/lib/stripe/connect.test.ts (3 tests) 9ms
+ ✓ tests/unit/vendor.test.ts (11 tests) 11ms
+ ✓ tests/unit/utils.test.ts (12 tests) 9ms
+ ✓ __tests__/components/vendor-info.test.tsx (6 tests) 131ms
+stdout | __tests__/webhooks/dispatcher.test.ts > Webhook Dispatcher > dispatchWebhook > should create and return webhook payload
+[WEBHOOK] Queued order.created for delivery
+
+stdout | __tests__/webhooks/dispatcher.test.ts > Webhook Dispatcher > dispatchWebhook > should handle dispatch with vendor filter
+[WEBHOOK] Queued order.created for delivery
+
+stdout | __tests__/webhooks/dispatcher.test.ts > Webhook Dispatcher > dispatchWebhook > should handle dispatch with user filter
+[WEBHOOK] Queued order.created for delivery
+
+stdout | __tests__/webhooks/dispatcher.test.ts > Webhook Dispatcher > Error Handling > should handle empty payload gracefully
+[WEBHOOK] Queued order.created for delivery
+
+stdout | __tests__/webhooks/dispatcher.test.ts > Webhook Dispatcher > Error Handling > should handle complex nested data structures
+[WEBHOOK] Queued order.created for delivery
+
+ ✓ __tests__/webhooks/dispatcher.test.ts (19 tests) 26ms
+ ✓ __tests__/lib/utils.test.ts (4 tests) 7ms
+ ✓ tests/unit/components.test.tsx (5 tests) 361ms
+
+ Test Files  7 passed (7)
+      Tests  60 passed (60)
+   Start at  20:10:22
+   Duration  3.35s (transform 555ms, setup 1.09s, import 1.59s, tests 554ms, environment 15.24s)
+
+
+> nextjs-amazona@0.1.0 build
+> next build
+
+   ▲ Next.js 15.1.0
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings
+
+./node_modules/@prisma/instrumentation/node_modules/@opentelemetry/instrumentation/build/esm/platform/node/instrumentation.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@prisma/instrumentation/node_modules/@opentelemetry/instrumentation/build/esm/platform/node/instrumentation.js
+./node_modules/@prisma/instrumentation/node_modules/@opentelemetry/instrumentation/build/esm/platform/node/index.js
+./node_modules/@prisma/instrumentation/node_modules/@opentelemetry/instrumentation/build/esm/platform/index.js
+./node_modules/@prisma/instrumentation/node_modules/@opentelemetry/instrumentation/build/esm/index.js
+./node_modules/@prisma/instrumentation/dist/index.js
+./node_modules/@sentry/node/build/cjs/integrations/tracing/prisma.js
+./node_modules/@sentry/node/build/cjs/index.js
+./node_modules/@sentry/nextjs/build/cjs/index.server.js
+./lib/api-handler.ts
+./app/api/system/rate-limit-status/route.ts
+
+
+./app/[locale]/(root)/cart/page.tsx
+51:6  Warning: React Hook useEffect has missing dependencies: 'items' and 'itemsPrice'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./app/[locale]/(root)/store/[vendorSlug]/page.tsx
+5:10  Warning: 'Badge' is defined but never used.  @typescript-eslint/no-unused-vars
+66:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+77:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./app/[locale]/admin/products/product-form.tsx
+4:8  Warning: 'Image' is defined but never used.  @typescript-eslint/no-unused-vars
+8:10  Warning: 'Card' is defined but never used.  @typescript-eslint/no-unused-vars
+8:16  Warning: 'CardContent' is defined but never used.  @typescript-eslint/no-unused-vars
+22:10  Warning: 'UploadButton' is defined but never used.  @typescript-eslint/no-unused-vars
+74:11  Warning: 'toast' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./app/[locale]/vendor/products/vendor-product-form.tsx
+4:8  Warning: 'Image' is defined but never used.  @typescript-eslint/no-unused-vars
+8:10  Warning: 'Card' is defined but never used.  @typescript-eslint/no-unused-vars
+8:16  Warning: 'CardContent' is defined but never used.  @typescript-eslint/no-unused-vars
+22:10  Warning: 'UploadButton' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/admin/reconciliation/route.ts
+7:3  Warning: 'getDiscrepancies' is defined but never used.  @typescript-eslint/no-unused-vars
+14:42  Warning: 'req' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/analytics/webhooks/metrics/route.ts
+6:3  Warning: 'getWebhookEventLogs' is defined but never used.  @typescript-eslint/no-unused-vars
+7:3  Warning: 'getWebhookStats' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'getFailedWebhooks' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'getWebhookSuccessRate' is defined but never used.  @typescript-eslint/no-unused-vars
+10:3  Warning: 'getWebhookTrends' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/analytics/webhooks/stats/route.ts
+7:3  Warning: 'getWebhookSuccessRate' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/cron/run-reconciliation/route.ts
+22:56  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./app/api/system/health/route.ts
+14:42  Warning: 'request' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/system/performance/route.ts
+9:27  Warning: '_request' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/system/rate-limit-status/route.ts
+21:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./app/api/vendor/webhooks/[webhookId]/route.ts
+9:3  Warning: 'testVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/vendor/webhooks/route.ts
+7:3  Warning: 'updateVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'deleteVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'testVendorWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/webhooks/replays/route.ts
+7:3  Warning: 'executeWebhookReplay' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'cancelWebhookReplay' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'getReplayStats' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/admin/reconciliation-dashboard.tsx
+24:3  Warning: 'DialogDescription' is defined but never used.  @typescript-eslint/no-unused-vars
+61:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/admin/webhook-analytics-dashboard.tsx
+5:3  Warning: 'LineChart' is defined but never used.  @typescript-eslint/no-unused-vars
+6:3  Warning: 'Line' is defined but never used.  @typescript-eslint/no-unused-vars
+7:3  Warning: 'BarChart' is defined but never used.  @typescript-eslint/no-unused-vars
+8:3  Warning: 'Bar' is defined but never used.  @typescript-eslint/no-unused-vars
+9:3  Warning: 'XAxis' is defined but never used.  @typescript-eslint/no-unused-vars
+10:3  Warning: 'YAxis' is defined but never used.  @typescript-eslint/no-unused-vars
+11:3  Warning: 'CartesianGrid' is defined but never used.  @typescript-eslint/no-unused-vars
+13:3  Warning: 'Legend' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/admin/webhook-event-logs-viewer.tsx
+31:11  Warning: 'PaginatedResponse' is defined but never used.  @typescript-eslint/no-unused-vars
+82:6  Warning: React Hook useEffect has a missing dependency: 'pagination.limit'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/admin/webhook-tester.tsx
+152:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/admin/webhook-trends-chart.tsx
+5:3  Warning: 'LineChart' is defined but never used.  @typescript-eslint/no-unused-vars
+26:10  Warning: 'WebhookEventType' is defined but never used.  @typescript-eslint/no-unused-vars
+57:33  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+98:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/shared/ai/background-remover.tsx
+138:29  Warning: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+138:36  Warning: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+
+./components/shared/error-boundary.tsx
+51:13  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+51:79  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+106:23  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+106:44  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./components/shared/pwa-initializer.tsx
+4:33  Warning: 'requestNotificationPermission' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/vendor/vendor-webhooks-management.tsx
+4:29  Warning: 'CardDescription' is defined but never used.  @typescript-eslint/no-unused-vars
+4:58  Warning: 'CardTitle' is defined but never used.  @typescript-eslint/no-unused-vars
+22:3  Warning: 'Edit' is defined but never used.  @typescript-eslint/no-unused-vars
+64:6  Warning: React Hook useEffect has a missing dependency: 'fetchWebhooks'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+81:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+132:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+166:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+197:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/actions/order.actions.ts
+29:33  Warning: 'integrateOrderPaid' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/actions/reconciliation.ts
+22:86  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+28:84  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+29:62  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+88:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+91:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+134:74  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+143:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+145:69  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+293:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+297:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+302:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+307:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+312:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+371:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+380:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/actions/vendor-webhook.ts
+8:10  Warning: 'dispatchWebhook' is defined but never used.  @typescript-eslint/no-unused-vars
+9:10  Warning: 'recordWebhookDelivery' is defined but never used.  @typescript-eslint/no-unused-vars
+68:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+80:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+98:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+111:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+203:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+323:15  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+331:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+341:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+354:40  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+367:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/actions/webhook-analytics.ts
+6:3  Warning: 'WebhookMetric' is defined but never used.  @typescript-eslint/no-unused-vars
+7:3  Warning: 'WebhookTrend' is defined but never used.  @typescript-eslint/no-unused-vars
+59:3  Warning: 'latency' is defined but never used.  @typescript-eslint/no-unused-vars
+105:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+110:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+117:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+138:9  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+162:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+175:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+188:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+193:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+202:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+223:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+223:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+237:65  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+238:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+238:57  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+244:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+244:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+298:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+310:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/actions/webhook-replay.ts
+1:8  Warning: 'crypto' is defined but never used.  @typescript-eslint/no-unused-vars
+13:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+116:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+155:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+189:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+197:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+211:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+221:67  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+267:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+270:17  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+336:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+344:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+356:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+414:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+425:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+426:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+427:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+429:59  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/api-handler.ts
+28:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+33:14  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/cache/query-cache.ts
+34:22  Warning: 'staleTime' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+179:55  Warning: 'namespace' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+258:1  Warning: Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+./lib/data.js
+3:15  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+4:18  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+5:21  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./lib/db/models/payment.model.ts
+12:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/db/models/payout.model.ts
+18:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/debug.ts
+13:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+24:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+65:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+66:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/models/reconciliation.ts
+16:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+33:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+54:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+70:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+192:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+193:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+200:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+201:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+205:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+206:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+210:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+211:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+216:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/models/webhook-replay.ts
+21:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/monitoring.ts
+6:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+12:14  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/rate-limit.ts
+80:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/sentry.ts
+10:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+15:12  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+65:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+122:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+138:83  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+175:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/stripe/subscriptions.ts
+64:10  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/subscription-enforcement.ts
+30:11  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/system/health-metrics.ts
+51:9  Warning: 'uptime' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./lib/utils.js
+24:14  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+25:24  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+26:22  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+79:1  Warning: Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any').
+
+./lib/validator.js
+4:13  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+5:15  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./lib/webhooks/dispatcher.ts
+41:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+58:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+84:3  Warning: 'filters' is defined but never used.  @typescript-eslint/no-unused-vars
+206:45  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/handlers.ts
+65:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+71:20  Warning: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+107:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+134:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+157:43  Warning: 'request' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/webhooks/integration.ts
+48:17  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+92:66  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+188:27  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+263:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+277:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+301:56  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/stripe-handler.ts
+15:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+85:60  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+112:57  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+134:45  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+158:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+178:41  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+202:43  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+219:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+237:4  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/triggers.ts
+21:35  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+23:17  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+32:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+39:47  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+39:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+46:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+58:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+70:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+80:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+80:83  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+91:57  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+102:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+112:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+122:53  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+133:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+144:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+155:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+168:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+180:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./lib/webhooks/types.ts
+55:24  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+103:25  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+112:23  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+120:22  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+120:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+127:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+135:30  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+143:26  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+150:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+ ✓ Linting and checking validity of types 
+ ✓ Collecting page data    
+ ✓ Generating static pages (30/30)
+ ✓ Collecting build traces    
+ ✓ Finalizing page optimization    
+
+Route (app)                                         Size     First Load JS
+┌ ○ /_not-found                                     990 B           107 kB
+├ ƒ /[locale]                                       5.47 kB         190 kB
+├ ƒ /[locale]/account                               2.89 kB         188 kB
+├ ƒ /[locale]/account/addresses                     1.85 kB         153 kB
+├ ƒ /[locale]/account/manage                        2.1 kB          124 kB
+├ ƒ /[locale]/account/manage/email                  1.75 kB         156 kB
+├ ƒ /[locale]/account/manage/name                   1.8 kB          156 kB
+├ ƒ /[locale]/account/manage/password               1.7 kB          153 kB
+├ ƒ /[locale]/account/orders                        3.31 kB         188 kB
+├ ƒ /[locale]/account/orders/[id]                   157 B           168 kB
+├ ƒ /[locale]/admin/orders                          2.25 kB         155 kB
+├ ƒ /[locale]/admin/orders/[id]                     157 B           168 kB
+├ ƒ /[locale]/admin/overview                        22.4 kB         299 kB
+├ ƒ /[locale]/admin/products                        2.77 kB         140 kB
+├ ƒ /[locale]/admin/products/[id]                   162 B           186 kB
+├ ƒ /[locale]/admin/products/create                 162 B           186 kB
+├ ƒ /[locale]/admin/reconciliation                  9.2 kB          165 kB
+├ ƒ /[locale]/admin/settings                        8.61 kB         210 kB
+├ ƒ /[locale]/admin/users                           1.24 kB         154 kB
+├ ƒ /[locale]/admin/users/[id]                      2.23 kB         181 kB
+├ ƒ /[locale]/admin/vendors                         12.9 kB         151 kB
+├ ƒ /[locale]/admin/vendors/[id]                    3.69 kB         128 kB
+├ ƒ /[locale]/admin/web-pages                       204 B           137 kB
+├ ƒ /[locale]/admin/web-pages/[id]                  1.61 kB         203 kB
+├ ƒ /[locale]/admin/web-pages/create                1.59 kB         199 kB
+├ ƒ /[locale]/admin/webhook-analytics               10.6 kB         266 kB
+├ ƒ /[locale]/admin/webhook-replays                 4.67 kB         165 kB
+├ ƒ /[locale]/become-a-vendor                       3.21 kB         179 kB
+├ ƒ /[locale]/cart                                  4.29 kB         189 kB
+├ ƒ /[locale]/cart/[itemId]                         4.02 kB         189 kB
+├ ƒ /[locale]/checkout                              12.4 kB         212 kB
+├ ƒ /[locale]/checkout/[id]                         15.4 kB         152 kB
+├ ƒ /[locale]/checkout/[id]/stripe-payment-success  188 B           110 kB
+├ ƒ /[locale]/page/[slug]                           235 B           106 kB
+├ ƒ /[locale]/product/[slug]                        13.9 kB         241 kB
+├ ƒ /[locale]/search                                5.29 kB         181 kB
+├ ƒ /[locale]/sign-in                               2.55 kB         154 kB
+├ ƒ /[locale]/sign-up                               2.88 kB         154 kB
+├ ƒ /[locale]/store/[vendorSlug]                    6.23 kB         188 kB
+├ ƒ /[locale]/vendor/analytics                      8.21 kB         234 kB
+├ ƒ /[locale]/vendor/dashboard                      188 B           110 kB
+├ ƒ /[locale]/vendor/orders                         188 B           110 kB
+├ ƒ /[locale]/vendor/payouts                        235 B           106 kB
+├ ƒ /[locale]/vendor/products                       196 B           115 kB
+├ ƒ /[locale]/vendor/products/new                   7.89 kB         198 kB
+├ ƒ /[locale]/vendor/settings                       5.68 kB         122 kB
+├ ƒ /[locale]/vendor/stripe/refresh                 235 B           106 kB
+├ ƒ /[locale]/vendor/stripe/success                 188 B           110 kB
+├ ƒ /[locale]/vendor/webhook-replays                3.08 kB         143 kB
+├ ƒ /[locale]/vendor/webhooks                       7.69 kB         137 kB
+├ ƒ /api/admin/reconciliation                       235 B           106 kB
+├ ƒ /api/admin/reconciliation/discrepancies         235 B           106 kB
+├ ƒ /api/ai/generate-description                    235 B           106 kB
+├ ƒ /api/ai/remove-background                       235 B           106 kB
+├ ƒ /api/analytics/webhooks/logs                    235 B           106 kB
+├ ƒ /api/analytics/webhooks/metrics                 235 B           106 kB
+├ ƒ /api/analytics/webhooks/stats                   235 B           106 kB
+├ ƒ /api/analytics/webhooks/trends                  235 B           106 kB
+├ ƒ /api/auth/[...nextauth]                         235 B           106 kB
+├ ƒ /api/cron/process-webhook-replays               235 B           106 kB
+├ ƒ /api/cron/run-reconciliation                    235 B           106 kB
+├ ƒ /api/manifest                                   235 B           106 kB
+├ ƒ /api/products/browsing-history                  235 B           106 kB
+├ ƒ /api/pusher/auth                                235 B           106 kB
+├ ƒ /api/recommendations                            235 B           106 kB
+├ ƒ /api/search                                     235 B           106 kB
+├ ƒ /api/system/errors                              235 B           106 kB
+├ ƒ /api/system/health                              235 B           106 kB
+├ ƒ /api/system/performance                         235 B           106 kB
+├ ƒ /api/system/rate-limit-status                   235 B           106 kB
+├ ƒ /api/uploadthing                                235 B           106 kB
+├ ƒ /api/vendor/webhooks                            235 B           106 kB
+├ ƒ /api/vendor/webhooks/[webhookId]                235 B           106 kB
+├ ƒ /api/vendor/webhooks/[webhookId]/test           235 B           106 kB
+├ ƒ /api/vendors/stripe/connect                     235 B           106 kB
+├ ƒ /api/webhooks/replays                           235 B           106 kB
+├ ƒ /api/webhooks/replays-batch                     235 B           106 kB
+├ ƒ /api/webhooks/replays-stats                     235 B           106 kB
+├ ƒ /api/webhooks/replays/[replayId]                235 B           106 kB
+├ ƒ /api/webhooks/stripe                            235 B           106 kB
+└ ƒ /api/webhooks/stripe-billing                    235 B           106 kB
++ First Load JS shared by all                       106 kB
+  ├ chunks/1517-bcd6a828bf973d71.js                 50.7 kB
+  ├ chunks/4bd1b696-30bfa5b1e950ba88.js             53 kB
+  └ other shared chunks (total)                     1.98 kB
+
+
+ƒ Middleware                                        94.7 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+ ~/Dev/nextjs-amazona  main +16 !52 ?18                                               ok  1m 54s 
+

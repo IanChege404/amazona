@@ -26,53 +26,31 @@ import { toSlug } from '@/lib/utils'
 import { IProductInput } from '@/types'
 import { AIDescriptionButton } from '@/components/vendor/ai-description-button'
 import { BackgroundRemoveButton } from '@/components/vendor/background-remove-button'
+import ProductImageUploader from '@/components/shared/product-image-uploader'
 
 const productDefaultValues: IProductInput =
-  process.env.NODE_ENV === 'development'
-    ? {
-        name: 'Sample Product',
-        slug: 'sample-product',
-        category: 'Sample Category',
-        images: ['/images/p11-1.jpg'],
-        brand: 'Sample Brand',
-        description: 'This is a sample description of the product.',
-        price: 99.99,
-        listPrice: 0,
-        countInStock: 15,
-        numReviews: 0,
-        avgRating: 0,
-        numSales: 0,
-        isPublished: false,
-        tags: [],
-        sizes: [],
-        colors: [],
-        ratingDistribution: [],
-        reviews: [],
-        vendorId: '',
-        vendorName: '',
-      }
-    : {
-        name: '',
-        slug: '',
-        category: '',
-        images: [],
-        brand: '',
-        description: '',
-        price: 0,
-        listPrice: 0,
-        countInStock: 0,
-        numReviews: 0,
-        avgRating: 0,
-        numSales: 0,
-        isPublished: false,
-        tags: [],
-        sizes: [],
-        colors: [],
-        ratingDistribution: [],
-        reviews: [],
-        vendorId: '',
-        vendorName: '',
-      }
+  {
+    name: '',
+    slug: '',
+    category: '',
+    images: [],
+    brand: '',
+    description: '',
+    price: 0,
+    listPrice: 0,
+    countInStock: 0,
+    numReviews: 0,
+    avgRating: 0,
+    numSales: 0,
+    isPublished: false,
+    tags: [],
+    sizes: [],
+    colors: [],
+    ratingDistribution: [],
+    reviews: [],
+    vendorId: '',
+    vendorName: '',
+  }
 
 interface VendorProductFormProps {
   vendorId: string
@@ -246,63 +224,24 @@ const VendorProductForm = ({ vendorId, vendorName }: VendorProductFormProps) => 
             render={() => (
               <FormItem className="w-full">
                 <FormLabel>Product Images</FormLabel>
-                <Card>
-                  <CardContent className="space-y-2 mt-2 min-h-48">
-                    <div className="flex justify-start items-center space-x-2 flex-wrap">
-                      {images.map((image: string) => (
-                        <div key={image} className="relative group">
-                          <Image
-                            src={image}
-                            alt="product image"
-                            className="w-20 h-20 object-cover object-center rounded-sm"
-                            width={100}
-                            height={100}
-                          />
-                          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-sm flex flex-col items-center justify-center gap-1">
-                            <button
-                              type="button"
-                              onClick={() => {
-                                form.setValue(
-                                  'images',
-                                  images.filter((img: string) => img !== image)
-                                )
-                              }}
-                              className="text-white text-xs font-medium bg-red-600 px-2 py-0.5 rounded"
-                            >
-                              Remove
-                            </button>
-                            <BackgroundRemoveButton
-                              imageUrl={image}
-                              onResult={(base64: string) => {
-                                form.setValue(
-                                  'images',
-                                  images.map((img: string) => (img === image ? base64 : img))
-                                )
-                              }}
-                            />
-                          </div>
-                        </div>
-                      ))}
-                      <FormControl>
-                        <UploadButton
-                          endpoint="imageUploader"
-                          onClientUploadComplete={(res: { url: string }[]) => {
-                            form.setValue('images', [...images, res[0].url])
-                            toast({
-                              description: 'Image uploaded successfully',
-                            })
-                          }}
-                          onUploadError={(error: Error) => {
-                            toast({
-                              variant: 'destructive',
-                              description: `Upload error: ${error.message}`,
-                            })
-                          }}
-                        />
-                      </FormControl>
-                    </div>
-                  </CardContent>
-                </Card>
+                <FormControl>
+                  <ProductImageUploader
+                    images={images}
+                    onChange={(nextImages) => form.setValue('images', nextImages)}
+                    endpoint="productImage"
+                    renderExtraActions={(image) => (
+                      <BackgroundRemoveButton
+                        imageUrl={image}
+                        onResult={(base64: string) => {
+                          form.setValue(
+                            'images',
+                            images.map((img: string) => (img === image ? base64 : img))
+                          )
+                        }}
+                      />
+                    )}
+                  />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}

@@ -70,32 +70,37 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   callbacks: {
     jwt: async ({ token, user, trigger, session }) => {
       if (user) {
+        const { connectToDatabase } = await import('./lib/db')
+        const User = (await import('./lib/db/models/user.model')).default
+
+        await connectToDatabase()
+
+        const dbUser = await User.findById(user.id)
+
         if (!user.name) {
-          // Dynamically import database code to avoid Edge Runtime issues
-          const { connectToDatabase } = await import('./lib/db')
-          await connectToDatabase()
-          const User = (await import('./lib/db/models/user.model')).default
           await User.findByIdAndUpdate(user.id, {
             name: user.name || user.email!.split('@')[0],
-            role: 'user',
           })
         }
+
         token.name = user.name || user.email!.split('@')[0]
-        token.role = (user as { role: string }).role
+        token.email = user.email
+        token.role = (dbUser?.role || (user as { role?: string }).role || 'user') as string
       }
 
-      if (session?.user?.name && trigger === 'update') {
+      if (trigger === 'update' && session?.user?.name) {
         token.name = session.user.name
+      }
+      if (trigger === 'update' && session?.user?.email) {
+        token.email = session.user.email
       }
       return token
     },
     session: async ({ session, user, trigger, token }) => {
       session.user.id = token.sub as string
-      session.user.role = token.role as string
+      session.user.role = (token.role as string) || 'user'
       session.user.name = token.name
-      if (trigger === 'update') {
-        session.user.name = user.name
-      }
+      session.user.email = token.email as string
       return session
     },
   },

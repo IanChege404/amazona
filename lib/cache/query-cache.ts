@@ -214,11 +214,16 @@ export async function getCacheStats(namespace: string = 'query') {
   }
 
   try {
-    // Approximate stats based on Redis info
-    const info = await redis.info()
+    const [ping, dbsize] = await Promise.all([
+      redis.ping(),
+      redis.dbsize().catch(() => null),
+    ])
+
     return {
       enabled: true,
-      redis: info,
+      namespace,
+      ping,
+      dbsize,
     }
   } catch (error) {
     console.error('[CACHE] Stats fetch failed', error)

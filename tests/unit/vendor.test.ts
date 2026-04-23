@@ -5,6 +5,8 @@ describe('Vendor Slug Generation', () => {
   const generateSlug = (businessName: string) => {
     return businessName
       .toLowerCase()
+      .replace(/[']/g, '')
+      .replace(/[\/]/g, '')
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/(^-|-$)/g, '')
   }

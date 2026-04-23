@@ -6,6 +6,7 @@
 
 import { WebhookEventType } from '@/lib/webhooks/types'
 import { dispatchWebhook } from '@/lib/webhooks/dispatcher'
+import { stripe } from '@/lib/stripe/connect'
 import Stripe from 'stripe'
 
 /**
@@ -235,13 +236,7 @@ export function verifyStripeWebhookSignature(
   secret: string
 ): any {
   try {
-    // Note: Import stripe from your Stripe config:
-    // import { stripe } from '@/lib/stripe'
-    // return stripe.webhooks.constructEvent(rawBody, signature, secret)
-    
-    // For now, return mock event structure
-    console.log('[STRIPE] Webhook signature verified')
-    return JSON.parse(typeof rawBody === 'string' ? rawBody : rawBody.toString())
+    return stripe.webhooks.constructEvent(rawBody, signature, secret)
   } catch (error) {
     console.error('[STRIPE] Webhook signature verification failed:', error)
     throw error

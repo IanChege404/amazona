@@ -15,7 +15,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10001',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
@@ -32,7 +32,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '1002',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Cash On Delivery',
@@ -49,7 +49,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '1003',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'PayPal',
@@ -66,7 +66,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '1005',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Cash On Delivery',
@@ -83,7 +83,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '1006',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'PayPal',
@@ -100,7 +100,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10001',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
@@ -117,7 +117,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10007',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Cash On Delivery',
@@ -134,7 +134,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10008',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
@@ -151,7 +151,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10009',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'PayPal',
@@ -168,7 +168,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10010',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
@@ -185,7 +185,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10011',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Cash On Delivery',
@@ -202,7 +202,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10012',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'PayPal',
@@ -219,7 +219,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10013',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
@@ -236,7 +236,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10014',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'Cash On Delivery',
@@ -253,7 +253,7 @@ const users: IUserInput[] = [
       city: 'New York',
       province: 'NY',
       postalCode: '10015',
-      country: 'USA',
+      country: 'Kenya',
       phone: '123-456-7890',
     },
     paymentMethod: 'PayPal',
@@ -1114,11 +1114,11 @@ const data: Data = {
     {
       title: 'About Us',
       slug: 'about-us',
-      content: `Welcome to [Your Store Name], your trusted destination for quality products and exceptional service. Our journey began with a mission to bring you the best shopping experience by offering a wide range of products at competitive prices, all in one convenient platform.
+      content: `Welcome to NxtAmzn, your destination for trusted products at fair prices. Our goal is simple: make online shopping easy, transparent, and reliable from discovery to delivery.
 
-At [Your Store Name], we prioritize customer satisfaction and innovation. Our team works tirelessly to curate a diverse selection of items, from everyday essentials to exclusive deals, ensuring there's something for everyone. We also strive to make your shopping experience seamless with fast shipping, secure payments, and excellent customer support.
+    We curate practical, high-demand products across apparel, shoes, watches, and everyday categories while keeping quality and value at the center. Every listing includes clear pricing, inventory, and delivery options so you can shop with confidence.
 
-As we continue to grow, our commitment to quality and service remains unwavering. Thank you for choosing [Your Store Name]—we look forward to being a part of your journey and delivering value every step of the way.`,
+    Our team focuses on fast fulfillment, secure checkout, and responsive support. As we grow, we remain committed to improving selection, delivery performance, and customer experience every day.`,
       isPublished: true,
     },
     {
@@ -1169,65 +1169,73 @@ Your data is safeguarded through robust security measures to prevent unauthorize
     {
       title: 'Conditions of Use',
       slug: 'conditions-of-use',
-      content: `Welcome to [Ecommerce Website Name]. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. These terms govern your use of our platform, including browsing, purchasing products, and interacting with any content or services provided. You must be at least 18 years old or have the consent of a parent or guardian to use this website. Any breach of these terms may result in the termination of your access to our platform.
+      content: `By using NxtAmzn, you agree to these terms. You are responsible for maintaining accurate account information and for all activities that occur under your account.
 
-We strive to ensure all product descriptions, pricing, and availability information on our website are accurate. However, errors may occur, and we reserve the right to correct them without prior notice. All purchases are subject to our return and refund policy. By using our site, you acknowledge that your personal information will be processed according to our privacy policy, ensuring your data is handled securely and responsibly. Please review these terms carefully before proceeding with any transactions.
-`,
+    Product availability and pricing may change without notice. While we work to keep product information accurate, occasional errors may occur and we reserve the right to correct them, cancel affected orders, and issue refunds when required.
+
+    All purchases are subject to our shipping, returns, and privacy policies. Misuse of the platform, fraudulent activity, or violations of applicable law may result in account suspension.`,
       isPublished: true,
     },
     {
       title: 'Customer Service',
       slug: 'customer-service',
-      content: `At [Your Store Name], our customer service team is here to ensure you have the best shopping experience. Whether you need assistance with orders, product details, or returns, we are committed to providing prompt and helpful support.
+      content: `Our support team is here to help with orders, returns, delivery updates, and account issues.
 
-If you have questions or concerns, please reach out to us through our multiple contact options:
-- **Email:** support@example.com
-- **Phone:** +1 (123) 456-7890
-- **Live Chat:** Available on our website for instant assistance
+    **Support Channels**
+    - **Email:** support@example.com
+    - **Phone:** +1 (123) 456-7890
+    - **Live Chat:** Available during business hours
 
-We also provide helpful resources such as order tracking, product guides, and FAQs to assist you with common inquiries. Your satisfaction is our priority, and we’re here to resolve any issues quickly and efficiently. Thank you for choosing us!`,
+    For faster resolution, include your order number and the email used at checkout. We typically respond within one business day.`,
       isPublished: true,
     },
     {
       title: 'Returns Policy',
       slug: 'returns-policy',
-      content: 'Returns Policy Content',
+      content:
+        'Most items can be returned within 30 days of delivery if they are unused and in original condition.\n\nTo start a return, contact support with your order number and reason for return. Once approved, we will provide return instructions. Refunds are issued to the original payment method after inspection.\n\nItems that are damaged, used, or missing original packaging may be partially refunded or rejected. Final-sale and hygiene-sensitive items are not eligible unless defective.',
       isPublished: true,
     },
     {
       title: 'Careers',
       slug: 'careers',
-      content: 'careers Content',
+      content:
+        'We\'re building a customer-first ecommerce experience and are always looking for curious, driven people.\n\nCurrent opportunities are shared through our hiring updates. To express interest, send your resume and role preference to careers@example.com.',
       isPublished: true,
     },
     {
       title: 'Blog',
       slug: 'blog',
-      content: 'Blog Content',
+      content:
+        'Welcome to the NxtAmzn Blog. We share product guides, shopping tips, and platform updates to help you make informed purchases.\n\nNew posts are published regularly, so check back for updates.',
       isPublished: true,
     },
     {
       title: 'Sell Products',
       slug: 'sell',
-      content: `Sell Products Content`,
+      content:
+        'Interested in selling on NxtAmzn? We support vendors with onboarding, product listing tools, and order management workflows.\n\nTo get started, submit a vendor application and include your business details, product categories, and fulfillment capabilities.',
       isPublished: true,
     },
     {
       title: 'Become Affiliate',
       slug: 'become-affiliate',
-      content: 'Become Affiliate Content',
+      content:
+        'Our affiliate program rewards partners for referring qualified traffic and orders.\n\nTo apply, share your audience channels and promotion strategy. Approved affiliates receive tracking links and performance reporting.',
       isPublished: true,
     },
     {
       title: 'Advertise Your Products',
       slug: 'advertise',
-      content: 'Advertise Your Products',
+      content:
+        'Boost your product visibility with placement opportunities across key storefront areas.\n\nCampaign options include category visibility, seasonal highlights, and promotional placement. Contact ads@example.com for available packages.',
       isPublished: true,
     },
     {
       title: 'Shipping Rates & Policies',
       slug: 'shipping',
-      content: 'Shipping Rates & Policies',
+      content:
+        'Shipping cost and delivery speed vary by destination, item type, and selected delivery option at checkout.\n\nOrders are processed as quickly as possible, and tracking details are shared once shipped. Delivery estimates are shown during checkout and in your order details.',
       isPublished: true,
     },
   ],
@@ -1265,6 +1273,32 @@ We also provide helpful resources such as order tracking, product guides, and FA
       href: '/page/help',
     },
   ],
+  footerSections: [
+    {
+      title: 'Get to Know Us',
+      links: [
+        { name: 'Careers', href: '/page/careers' },
+        { name: 'Blog', href: '/page/blog' },
+        { name: 'About Us', href: '/page/about-us' },
+      ],
+    },
+    {
+      title: 'Make Money with Us',
+      links: [
+        { name: 'Sell products on NxtAmzn', href: '/page/sell' },
+        { name: 'Become an Affiliate', href: '/page/become-affiliate' },
+        { name: 'Advertise Your Products', href: '/page/advertise' },
+      ],
+    },
+    {
+      title: 'Let Us Help You',
+      links: [
+        { name: 'Shipping Rates & Policies', href: '/page/shipping' },
+        { name: 'Returns & Replacements', href: '/page/returns-policy' },
+        { name: 'Help', href: '/page/help' },
+      ],
+    },
+  ],
   carousels: [
     {
       title: 'Most Popular Shoes For Sale',
@@ -1300,16 +1334,16 @@ We also provide helpful resources such as order tracking, product guides, and FA
       site: {
         name: 'NxtAmzn',
         description:
-          'NxtAmzn is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.',
-        keywords: 'Next Ecommerce, Next.js, Tailwind CSS, MongoDB',
+          'NxtAmzn is a Kenya-focused multi-vendor marketplace built with Next.js, Tailwind CSS, and MongoDB.',
+        keywords: 'Kenya Ecommerce, Next.js, Tailwind CSS, MongoDB',
         url: 'https://next-mongo-ecommerce-final.vercel.app',
         logo: '/icons/logo.svg',
         slogan: 'Spend less, enjoy more.',
         author: 'Next Ecommerce',
         copyright: '2000-2024, Next-Ecommerce.com, Inc. or its affiliates',
         email: 'admin@example.com',
-        address: '123, Main Street, Anytown, CA, Zip 12345',
-        phone: '+1 (123) 456-7890',
+        address: 'Westlands, Nairobi, Kenya',
+        phone: '+254 700 000000',
       },
       carousels: [
         {
@@ -1338,15 +1372,21 @@ We also provide helpful resources such as order tracking, product guides, and FA
       defaultLanguage: 'en-US',
       availableCurrencies: [
         {
+          name: 'Kenyan Shilling',
+          code: 'KES',
+          symbol: 'KSh',
+          convertRate: 1,
+        },
+        {
           name: 'United States Dollar',
           code: 'USD',
           symbol: '$',
-          convertRate: 1,
+          convertRate: 129.5,
         },
-        { name: 'Euro', code: 'EUR', symbol: '€', convertRate: 0.96 },
-        { name: 'UAE Dirham', code: 'AED', symbol: 'AED', convertRate: 3.67 },
+        { name: 'Euro', code: 'EUR', symbol: '€', convertRate: 141.2 },
+        { name: 'UAE Dirham', code: 'AED', symbol: 'AED', convertRate: 35.3 },
       ],
-      defaultCurrency: 'USD',
+      defaultCurrency: 'KES',
       availablePaymentMethods: [
         { name: 'PayPal', commission: 0 },
         { name: 'Stripe', commission: 0 },

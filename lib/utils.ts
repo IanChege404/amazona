@@ -44,13 +44,16 @@ export const toSlug = (text: string): string =>
     .replace(/^-+|-+$/g, '')
     .replace(/-+/g, '-')
 
-const CURRENCY_FORMATTER = new Intl.NumberFormat('en-US', {
-  currency: 'USD',
-  style: 'currency',
-  minimumFractionDigits: 2,
-})
-export function formatCurrency(amount: number) {
-  return CURRENCY_FORMATTER.format(amount)
+export function formatCurrency(
+  amount: number,
+  currency = 'KES',
+  locale = 'en-US'
+) {
+  return new Intl.NumberFormat(locale, {
+    currency,
+    style: 'currency',
+    minimumFractionDigits: 2,
+  }).format(amount)
 }
 
 const NUMBER_FORMATTER = new Intl.NumberFormat('en-US')

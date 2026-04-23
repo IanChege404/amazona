@@ -45,6 +45,13 @@ export type Data = {
     name: string
     href: string
   }[]
+  footerSections: {
+    title: string
+    links: {
+      name: string
+      href: string
+    }[]
+  }[]
   carousels: {
     image: string
     url: string

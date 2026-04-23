@@ -6,6 +6,26 @@
 import { WebhookEventType, webhookDataBuilders } from '@/lib/webhooks/types'
 import { dispatchWebhook } from '@/lib/webhooks/dispatcher'
 
+function toStringId(value: unknown): string | undefined {
+  if (typeof value === 'string') return value
+  if (typeof value === 'number' || typeof value === 'bigint') return String(value)
+
+  if (value && typeof value === 'object') {
+    const id = (value as { _id?: unknown; id?: unknown })._id ?? (value as { id?: unknown }).id
+    if (id !== undefined) return toStringId(id)
+  }
+
+  return undefined
+}
+
+function getOrderVendorIds(order: any): string[] {
+  const vendorIds = (order.items || [])
+    .map((item: any): string | undefined => toStringId(item.vendorId))
+    .filter((vendorId: string | undefined): vendorId is string => Boolean(vendorId))
+
+  return [...new Set<string>(vendorIds)]
+}
+
 /**
  * Trigger order created event
  */
@@ -26,8 +46,8 @@ export async function triggerOrderPaid(order: any, payment: any) {
 export async function triggerOrderDelivered(order: any, deliveryDate?: Date) {
   return dispatchWebhook(WebhookEventType.ORDER_DELIVERED, {
     orderId: order._id.toString(),
-    customerId: order.userId.toString(),
-    vendorId: order.vendorId.toString(),
+    customerId: toStringId(order.user),
+    vendorIds: getOrderVendorIds(order),
     deliveryDate: deliveryDate || new Date(),
   })
 }
@@ -38,8 +58,8 @@ export async function triggerOrderDelivered(order: any, deliveryDate?: Date) {
 export async function triggerOrderCancelled(order: any, reason?: string) {
   return dispatchWebhook(WebhookEventType.ORDER_CANCELLED, {
     orderId: order._id.toString(),
-    customerId: order.userId.toString(),
-    vendorId: order.vendorId.toString(),
+    customerId: toStringId(order.user),
+    vendorIds: getOrderVendorIds(order),
     reason: reason || 'Customer requested cancellation',
   })
 }
@@ -97,6 +117,17 @@ export async function triggerVendorApproved(vendor: any) {
 }
 
 /**
+ * Trigger vendor rejected event
+ */
+export async function triggerVendorRejected(vendor: any, reason?: string) {
+  return dispatchWebhook(WebhookEventType.VENDOR_REJECTED, {
+    vendorId: vendor._id.toString(),
+    businessName: vendor.businessName,
+    reason: reason || 'Application rejected',
+  })
+}
+
+/**
  * Trigger vendor suspended event
  */
 export async function triggerVendorSuspended(vendor: any, reason?: string) {
@@ -140,5 +171,20 @@ export async function triggerPayoutInitiated(payout: any) {
     vendorId: payout.vendorId.toString(),
     amount: payout.amount,
     bankAccount: payout.bankAccount,
+  })
+}
+
+/**
+ * Trigger payout processed event
+ */
+export async function triggerPayoutProcessed(payout: any) {
+  return dispatchWebhook(WebhookEventType.PAYOUT_PROCESSED, {
+    payoutId: payout._id.toString(),
+    vendorId: payout.vendorId.toString(),
+    amount: payout.amount,
+    currency: payout.currency,
+    status: payout.status,
+    periodStart: payout.periodStart,
+    periodEnd: payout.periodEnd,
   })
 }

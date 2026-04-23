@@ -27,6 +27,42 @@ import { IProduct } from '@/lib/db/models/product.model'
 import { IVendor } from '@/lib/db/models/vendor.model'
 import { dispatchToVendorWebhooks } from '@/lib/actions/vendor-webhook'
 
+function toStringId(value: unknown): string | undefined {
+  if (typeof value === 'string') return value
+  if (typeof value === 'number' || typeof value === 'bigint') return String(value)
+
+  if (value && typeof value === 'object') {
+    const id = (value as { _id?: unknown; id?: unknown })._id ?? (value as { id?: unknown }).id
+    if (id !== undefined) return toStringId(id)
+  }
+
+  return undefined
+}
+
+function getOrderCustomerId(order: IOrder): string | undefined {
+  return toStringId(order.user)
+}
+
+function getOrderVendorIds(order: IOrder): string[] {
+  const vendorIds = order.items
+    .map((item: any) => toStringId(item.vendorId))
+    .filter((vendorId): vendorId is string => Boolean(vendorId))
+
+  return [...new Set(vendorIds)]
+}
+
+function buildOrderWebhookData(order: IOrder, extra: Record<string, unknown> = {}) {
+  return {
+    orderId: order._id?.toString(),
+    customerId: getOrderCustomerId(order),
+    vendorIds: getOrderVendorIds(order),
+    total: order.totalPrice,
+    itemsCount: order.items?.length || 0,
+    timestamp: new Date(),
+    ...extra,
+  }
+}
+
 /**
  * Webhook integration for order creation
  * Triggers both platform and vendor webhooks
@@ -37,14 +73,11 @@ export async function integrateOrderCreated(order: IOrder) {
     await triggerOrderCreated(order)
 
     // Dispatch to vendor-specific webhooks if they're subscribed
-    await dispatchToVendorWebhooks('order.created', {
-      orderId: order._id?.toString(),
-      vendorId: order.vendorId?.toString(),
-      customerId: order.userId?.toString(),
-      total: order.totalPrice,
-      itemsCount: order.orderItems?.length || 0,
-      timestamp: new Date(),
-    })
+    const payload = buildOrderWebhookData(order)
+
+    for (const vendorId of payload.vendorIds) {
+      await dispatchToVendorWebhooks(vendorId, 'order.created', payload)
+    }
 
     console.log(`[WEBHOOK] Order created event triggered for order ${order._id}`)
   } catch (error) {
@@ -62,14 +95,14 @@ export async function integrateOrderPaid(order: IOrder, payment: any) {
     await triggerOrderPaid(order, payment)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('order.paid', {
-      orderId: order._id?.toString(),
-      vendorId: order.vendorId?.toString(),
-      customerId: order.userId?.toString(),
+    const payload = buildOrderWebhookData(order, {
       paymentMethod: payment.paymentMethod,
       amount: payment.amount,
-      timestamp: new Date(),
     })
+
+    for (const vendorId of payload.vendorIds) {
+      await dispatchToVendorWebhooks(vendorId, 'order.paid', payload)
+    }
 
     console.log(`[WEBHOOK] Order paid event triggered for order ${order._id}`)
   } catch (error) {
@@ -86,13 +119,13 @@ export async function integrateOrderDelivered(order: IOrder, deliveryDate?: Date
     await triggerOrderDelivered(order, deliveryDate)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('order.delivered', {
-      orderId: order._id?.toString(),
-      vendorId: order.vendorId?.toString(),
-      customerId: order.userId?.toString(),
+    const payload = buildOrderWebhookData(order, {
       deliveryDate: deliveryDate || new Date(),
-      timestamp: new Date(),
     })
+
+    for (const vendorId of payload.vendorIds) {
+      await dispatchToVendorWebhooks(vendorId, 'order.delivered', payload)
+    }
 
     console.log(`[WEBHOOK] Order delivered event triggered for order ${order._id}`)
   } catch (error) {
@@ -109,13 +142,13 @@ export async function integrateOrderCancelled(order: IOrder, reason?: string) {
     await triggerOrderCancelled(order, reason)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('order.cancelled', {
-      orderId: order._id?.toString(),
-      vendorId: order.vendorId?.toString(),
-      customerId: order.userId?.toString(),
+    const payload = buildOrderWebhookData(order, {
       reason: reason || 'Not specified',
-      timestamp: new Date(),
     })
+
+    for (const vendorId of payload.vendorIds) {
+      await dispatchToVendorWebhooks(vendorId, 'order.cancelled', payload)
+    }
 
     console.log(`[WEBHOOK] Order cancelled event triggered for order ${order._id}`)
   } catch (error) {
@@ -132,11 +165,11 @@ export async function integrateProductCreated(product: IProduct) {
     await triggerProductCreated(product)
 
     // Dispatch to vendor webhooks (their own webhook subscriptions)
-    await dispatchToVendorWebhooks('product.created', {
+    await dispatchToVendorWebhooks(product.vendorId.toString(), 'product.created', {
       productId: product._id?.toString(),
       vendorId: product.vendorId?.toString(),
       name: product.name,
-      sku: product.sku,
+      sku: product.slug,
       price: product.price,
       timestamp: new Date(),
     })
@@ -159,7 +192,7 @@ export async function integrateProductUpdated(
     await triggerProductUpdated(product, changes)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('product.updated', {
+    await dispatchToVendorWebhooks(product.vendorId.toString(), 'product.updated', {
       productId: product._id?.toString(),
       vendorId: product.vendorId?.toString(),
       changes,
@@ -181,7 +214,7 @@ export async function integrateProductLowStock(product: IProduct, currentStock: 
     await triggerLowStockAlert(product, currentStock)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('product.low_stock', {
+    await dispatchToVendorWebhooks(product.vendorId.toString(), 'product.low_stock', {
       productId: product._id?.toString(),
       vendorId: product.vendorId?.toString(),
       name: product.name,
@@ -247,7 +280,7 @@ export async function integrateReviewCreated(review: any, product: IProduct) {
     await triggerReviewCreated(review)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('review.created', {
+    await dispatchToVendorWebhooks(product.vendorId.toString(), 'review.created', {
       reviewId: review._id?.toString(),
       productId: product._id?.toString(),
       vendorId: product.vendorId?.toString(),
@@ -271,7 +304,7 @@ export async function integratePayoutProcessed(payout: any) {
     await triggerPayoutProcessed(payout)
 
     // Dispatch to vendor webhooks
-    await dispatchToVendorWebhooks('payout.processed', {
+    await dispatchToVendorWebhooks(payout.vendorId.toString(), 'payout.processed', {
       payoutId: payout._id?.toString(),
       vendorId: payout.vendorId?.toString(),
       amount: payout.amount,
@@ -285,17 +318,3 @@ export async function integratePayoutProcessed(payout: any) {
   }
 }
 
-export default {
-  integrateOrderCreated,
-  integrateOrderPaid,
-  integrateOrderDelivered,
-  integrateOrderCancelled,
-  integrateProductCreated,
-  integrateProductUpdated,
-  integrateProductLowStock,
-  integrateVendorApproved,
-  integrateVendorRejected,
-  integrateUserRegistered,
-  integrateReviewCreated,
-  integratePayoutProcessed,
-}

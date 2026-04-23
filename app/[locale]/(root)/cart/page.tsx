@@ -16,7 +16,8 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { debugLog, debugError } from '@/lib/debug'
 
 export default function CartPage() {
   const {
@@ -33,6 +34,21 @@ export default function CartPage() {
   } = useSettingStore()
 
   const t = useTranslations()
+
+  // Log cart page mount and state
+  useEffect(() => {
+    debugLog('CartPage', 'Component mounted', {
+      itemCount: items.length,
+      totalQuantity: items.reduce((sum, i) => sum + i.quantity, 0),
+      itemsPrice,
+    })
+
+    return () => {
+      debugLog('CartPage', 'Component unmounted', {
+        itemCount: items.length,
+      })
+    }
+  }, [])
   return (
     <div>
       <div className='grid grid-cols-1 md:grid-cols-4  md:gap-4'>
@@ -105,9 +121,33 @@ export default function CartPage() {
                         <div className='flex gap-2 items-center'>
                           <Select
                             value={item.quantity.toString()}
-                            onValueChange={(value) =>
-                              updateItem(item, Number(value))
-                            }
+                            onValueChange={(value) => {
+                              const newQty = Number(value)
+                              debugLog('CartPage', 'Item quantity changed', {
+                                productId: item.product,
+                                productName: item.name,
+                                oldQuantity: item.quantity,
+                                newQuantity: newQty,
+                              })
+
+                              try {
+                                updateItem(item, newQty)
+                                debugLog('CartPage', 'Item quantity updated successfully', {
+                                  productId: item.product,
+                                  newQuantity: newQty,
+                                })
+                              } catch (error) {
+                                debugError(
+                                  'CartPage',
+                                  'Error updating item quantity',
+                                  error,
+                                  {
+                                    productId: item.product,
+                                    newQuantity: newQty,
+                                  }
+                                )
+                              }
+                            }}
                           >
                             <SelectTrigger className='w-auto'>
                               <SelectValue>
@@ -126,7 +166,29 @@ export default function CartPage() {
                           </Select>
                           <Button
                             variant={'outline'}
-                            onClick={() => removeItem(item)}
+                            onClick={() => {
+                              debugLog('CartPage', 'Delete button clicked', {
+                                productId: item.product,
+                                productName: item.name,
+                                quantity: item.quantity,
+                              })
+
+                              try {
+                                removeItem(item)
+                                debugLog('CartPage', 'Item removed successfully', {
+                                  productId: item.product,
+                                })
+                              } catch (error) {
+                                debugError(
+                                  'CartPage',
+                                  'Error removing item',
+                                  error,
+                                  {
+                                    productId: item.product,
+                                  }
+                                )
+                              }
+                            }}
                           >
                             {t('Cart.Delete')}
                           </Button>
@@ -197,7 +259,14 @@ export default function CartPage() {
                     </span>{' '}
                   </div>
                   <Button
-                    onClick={() => router.push('/checkout')}
+                    onClick={() => {
+                      debugLog('CartPage', 'Proceed to checkout clicked', {
+                        itemCount: items.length,
+                        totalQuantity: items.reduce((a, c) => a + c.quantity, 0),
+                        itemsPrice,
+                      })
+                      router.push('/checkout')
+                    }}
                     className='rounded-full w-full'
                   >
                     {t('Cart.Proceed to Checkout')}

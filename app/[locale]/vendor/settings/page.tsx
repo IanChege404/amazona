@@ -290,7 +290,9 @@ export default function VendorSettingsPage() {
           <CardDescription>Update your vendor account details</CardDescription>
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-muted-foreground">Account settings form coming soon</p>
+          <p className="text-sm text-muted-foreground">
+            Vendor profile settings are currently managed from the dashboard and Stripe onboarding.
+          </p>
         </CardContent>
       </Card>
 

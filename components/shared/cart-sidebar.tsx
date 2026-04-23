@@ -1,7 +1,7 @@
 import useCartStore from '@/hooks/use-cart-store'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button, buttonVariants } from '../ui/button'
 import { Separator } from '../ui/separator'
 import { ScrollArea } from '../ui/scroll-area'
@@ -18,6 +18,7 @@ import useSettingStore from '@/hooks/use-setting-store'
 import ProductPrice from './product/product-price'
 import { useLocale, useTranslations } from 'next-intl'
 import { getDirection } from '@/i18n-config'
+import { debugLog, debugError } from '@/lib/debug'
 
 export default function CartSidebar() {
   const {
@@ -34,6 +35,14 @@ export default function CartSidebar() {
   const t = useTranslations()
 
   const locale = useLocale()
+
+  // Log sidebar mount and updates
+  useEffect(() => {
+    debugLog('CartSidebar', 'Component mounted', {
+      itemCount: items.length,
+      itemsPrice,
+    })
+  }, [items.length, itemsPrice])
   return (
     <div className='w-32 overflow-y-auto'>
       <div
@@ -87,7 +96,31 @@ export default function CartSidebar() {
                     <Select
                       value={item.quantity.toString()}
                       onValueChange={(value) => {
-                        updateItem(item, Number(value))
+                        const newQty = Number(value)
+                        debugLog('CartSidebar', 'Item quantity changed in sidebar', {
+                          productId: item.product,
+                          productName: item.name,
+                          oldQuantity: item.quantity,
+                          newQuantity: newQty,
+                        })
+
+                        try {
+                          updateItem(item, newQty)
+                          debugLog('CartSidebar', 'Item quantity updated', {
+                            productId: item.product,
+                            newQuantity: newQty,
+                          })
+                        } catch (error) {
+                          debugError(
+                            'CartSidebar',
+                            'Error updating item quantity',
+                            error,
+                            {
+                              productId: item.product,
+                              newQuantity: newQty,
+                            }
+                          )
+                        }
                       }}
                     >
                       <SelectTrigger className='text-xs w-12 ml-1 h-auto py-0'>
@@ -107,7 +140,27 @@ export default function CartSidebar() {
                       variant={'outline'}
                       size={'sm'}
                       onClick={() => {
-                        removeItem(item)
+                        debugLog('CartSidebar', 'Delete button clicked in sidebar', {
+                          productId: item.product,
+                          productName: item.name,
+                          quantity: item.quantity,
+                        })
+
+                        try {
+                          removeItem(item)
+                          debugLog('CartSidebar', 'Item removed from sidebar', {
+                            productId: item.product,
+                          })
+                        } catch (error) {
+                          debugError(
+                            'CartSidebar',
+                            'Error removing item',
+                            error,
+                            {
+                              productId: item.product,
+                            }
+                          )
+                        }
                       }}
                     >
                       <TrashIcon className='w-4 h-4' />

@@ -27,6 +27,7 @@ export enum WebhookEventType {
   // Vendor events
   VENDOR_CREATED = 'vendor.created',
   VENDOR_APPROVED = 'vendor.approved',
+  VENDOR_REJECTED = 'vendor.rejected',
   VENDOR_SUSPENDED = 'vendor.suspended',
   VENDOR_SETTINGS_UPDATED = 'vendor.settings_updated',
 
@@ -37,6 +38,7 @@ export enum WebhookEventType {
 
   // Payout events
   PAYOUT_INITIATED = 'payout.initiated',
+  PAYOUT_PROCESSED = 'payout.processed',
   PAYOUT_COMPLETED = 'payout.completed',
   PAYOUT_FAILED = 'payout.failed',
 
@@ -100,10 +102,19 @@ export interface WebhookDeliveryLog {
 export const webhookDataBuilders = {
   orderCreated: (order: any) => ({
     orderId: order._id.toString(),
-    customerId: order.userId.toString(),
-    vendorId: order.vendorId.toString(),
-    totalAmount: order.totalAmount,
-    status: order.status,
+    customerId:
+      typeof order.user === 'string'
+        ? order.user
+        : order.user?._id?.toString?.() || order.user?.id?.toString?.() || order.user?.email,
+    vendorIds: Array.from(
+      new Set(
+        (order.items || [])
+          .map((item: any) => item.vendorId?.toString?.())
+          .filter(Boolean)
+      )
+    ),
+    totalAmount: order.totalPrice ?? order.totalAmount,
+    status: order.isPaid ? 'paid' : order.isDelivered ? 'delivered' : 'created',
   }),
 
   orderPaid: (order: any, payment: any) => ({
@@ -117,7 +128,7 @@ export const webhookDataBuilders = {
     productId: product._id.toString(),
     vendorId: product.vendorId.toString(),
     name: product.name,
-    sku: product.sku,
+    sku: product.slug,
     price: product.price,
   }),
 
@@ -126,7 +137,7 @@ export const webhookDataBuilders = {
     vendorId: product.vendorId.toString(),
     name: product.name,
     currentStock,
-    lowStockThreshold: product.lowStockThreshold,
+    lowStockThreshold: product.lowStockThreshold ?? 10,
   }),
 
   paymentFailed: (order: any, error: string) => ({

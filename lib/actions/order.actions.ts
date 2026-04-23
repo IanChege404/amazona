@@ -405,7 +405,11 @@ export async function createPayPalOrder(orderId: string) {
   try {
     const order = await Order.findById(orderId)
     if (order) {
-      const paypalOrder = await paypal.createOrder(order.totalPrice)
+      const { defaultCurrency } = await getSetting()
+      const paypalOrder = await paypal.createOrder(
+        order.totalPrice,
+        defaultCurrency
+      )
       order.paymentResult = {
         id: paypalOrder.id,
         email_address: '',

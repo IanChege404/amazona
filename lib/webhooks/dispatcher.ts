@@ -23,7 +23,14 @@ export function generateWebhookSignature(payload: string, secret: string): strin
  */
 export function verifyWebhookSignature(payload: string, signature: string, secret: string): boolean {
   const computed = generateWebhookSignature(payload, secret)
-  return crypto.timingSafeEqual(Buffer.from(computed), Buffer.from(signature))
+  const computedBuffer = Buffer.from(computed)
+  const signatureBuffer = Buffer.from(signature)
+
+  if (computedBuffer.length !== signatureBuffer.length) {
+    return false
+  }
+
+  return crypto.timingSafeEqual(computedBuffer, signatureBuffer)
 }
 
 /**

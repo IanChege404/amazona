@@ -1,0 +1,257 @@
+[
+  {
+    "name": "John",
+    "email": "admin@example.com",
+    "password": "$2a$05$obNj06I/lLzFdebmQlJAYOUmThikeTBjTbrp9U5ErTNZFSHcJJf.q",
+    "role": "admin",
+    "address": {
+      "fullName": "John Doe",
+      "street": "111 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10001",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Stripe",
+    "emailVerified": false
+  },
+  {
+    "name": "Jane",
+    "email": "jane@example.com",
+    "password": "$2a$05$3ONVhg3brzUdZxDj.k6lFuqk2Ar9qxoa75CqvkK4PPbDPq8y.jLsO",
+    "role": "user",
+    "address": {
+      "fullName": "Jane Harris",
+      "street": "222 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "1002",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Cash On Delivery",
+    "emailVerified": false
+  },
+  {
+    "name": "Jack",
+    "email": "jack@example.com",
+    "password": "$2a$05$Mc8HygX5A9thxATWtbUb7eV.BCaT/Ul./9joODNLD41XqN3cYxeS6",
+    "role": "user",
+    "address": {
+      "fullName": "Jack Ryan",
+      "street": "333 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "1003",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "PayPal",
+    "emailVerified": false
+  },
+  {
+    "name": "Sarah",
+    "email": "sarah@example.com",
+    "password": "$2a$05$u5InBjrpNesvXiVZazdi/Oa2BghOn5wMmuJ3ILeyv9cNpHlucjW6C",
+    "role": "user",
+    "address": {
+      "fullName": "Sarah Smith",
+      "street": "444 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "1005",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Cash On Delivery",
+    "emailVerified": false
+  },
+  {
+    "name": "Michael",
+    "email": "michael@example.com",
+    "password": "$2a$05$MN/2PnDWKTv2NdggrRil6.ZhJcRCP8rBHGuEndKnVFhES4o7XHnR6",
+    "role": "user",
+    "address": {
+      "fullName": "John Alexander",
+      "street": "555 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "1006",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "PayPal",
+    "emailVerified": false
+  },
+  {
+    "name": "Emily",
+    "email": "emily@example.com",
+    "password": "$2a$05$0q88jJGk0OrYG2jmH.3VL.wtrjbZR4RiHo1XZq/W3x6CimpW2iWza",
+    "role": "user",
+    "address": {
+      "fullName": "Emily Johnson",
+      "street": "666 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10001",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Stripe",
+    "emailVerified": false
+  },
+  {
+    "name": "Alice",
+    "email": "alice@example.com",
+    "password": "$2a$05$2zgc6hIhRhrgyVza18papOgqj74cUSbFjU6xLHrEy5574HyDosaW6",
+    "role": "user",
+    "address": {
+      "fullName": "Alice Cooper",
+      "street": "777 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10007",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Cash On Delivery",
+    "emailVerified": false
+  },
+  {
+    "name": "Tom",
+    "email": "tom@example.com",
+    "password": "$2a$05$u9wNQ4MG/CVAjZAtXhuULONt5VY3SxVr6EXDT0tMhkgkpy9asTwCW",
+    "role": "user",
+    "address": {
+      "fullName": "Tom Hanks",
+      "street": "888 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10008",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Stripe",
+    "emailVerified": false
+  },
+  {
+    "name": "Linda",
+    "email": "linda@example.com",
+    "password": "$2a$05$aOzQP84uAo65qKRGIYiIgeEQbqQJW0N.4bwjmrzAuU.DzBV.pi.kK",
+    "role": "user",
+    "address": {
+      "fullName": "Linda Holmes",
+      "street": "999 Main St",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10009",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "PayPal",
+    "emailVerified": false
+  },
+  {
+    "name": "George",
+    "email": "george@example.com",
+    "password": "$2a$05$3wyiqX.HJsPOdNFslABLA.k2hcwg63VoBfYxIXihoTv92aoJ6Y4X.",
+    "role": "user",
+    "address": {
+      "fullName": "George Smith",
+      "street": "101 First Ave",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10010",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Stripe",
+    "emailVerified": false
+  },
+  {
+    "name": "Jessica",
+    "email": "jessica@example.com",
+    "password": "$2a$05$pRTA9NsYCjFHmtrahdRbhevG6QyVL8YkTE4MVKmFBzZbxZk.aiCFy",
+    "role": "user",
+    "address": {
+      "fullName": "Jessica Brown",
+      "street": "102 First Ave",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10011",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Cash On Delivery",
+    "emailVerified": false
+  },
+  {
+    "name": "Chris",
+    "email": "chris@example.com",
+    "password": "$2a$05$x5nvShHYvyYoKAdy.DwZ2ethwnnn6dl1RbRO.UhAOrs5sP6/WSJmG",
+    "role": "user",
+    "address": {
+      "fullName": "Chris Evans",
+      "street": "103 First Ave",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10012",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "PayPal",
+    "emailVerified": false
+  },
+  {
+    "name": "Samantha",
+    "email": "samantha@example.com",
+    "password": "$2a$05$4yKylq6irmb1AVnMzXtN5uzqaihxWMPcr3c3TY7TNyh.YZlpHfUlO",
+    "role": "user",
+    "address": {
+      "fullName": "Samantha Wilson",
+      "street": "104 First Ave",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10013",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Stripe",
+    "emailVerified": false
+  },
+  {
+    "name": "David",
+    "email": "david@example.com",
+    "password": "$2a$05$uY6qR.x9sVOrgKU0X/XMueh5seDYQWTAm5cobdGGoVG1B8Tly7MYC",
+    "role": "user",
+    "address": {
+      "fullName": "David Lee",
+      "street": "105 First Ave",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10014",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "Cash On Delivery",
+    "emailVerified": false
+  },
+  {
+    "name": "Anna",
+    "email": "anna@example.com",
+    "password": "$2a$05$0lw6smmbF7uoTHjqLb60feREwzqYNaUqMjxnush6WxwKahhfImR8a",
+    "role": "user",
+    "address": {
+      "fullName": "Anna Smith",
+      "street": "106 First Ave",
+      "city": "New York",
+      "province": "NY",
+      "postalCode": "10015",
+      "country": "Kenya",
+      "phone": "123-456-7890"
+    },
+    "paymentMethod": "PayPal",
+    "emailVerified": false
+  }
+]

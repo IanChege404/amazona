@@ -27,17 +27,11 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { toSlug } from '@/lib/utils'
 
 const webPageDefaultValues =
-  process.env.NODE_ENV === 'development'
-    ? {
-        title: 'Sample Page',
-        slug: 'sample-page',
-        content: 'Sample Content',
-      }
-    : {
-        title: '',
-        slug: '',
-        content: '',
-      }
+  {
+    title: '',
+    slug: '',
+    content: '',
+  }
 
 const WebPageForm = ({
   type,

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
+import useSettingStore from '@/hooks/use-setting-store'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { formatCurrency } from '@/lib/utils'
@@ -143,6 +144,9 @@ function SimpleDateRangePicker({
 export default function VendorAnalyticsPage() {
   const { data: session, status } = useSession()
   const router = useRouter()
+  const {
+    setting: { currency, defaultCurrency },
+  } = useSettingStore()
   const [dateRange, setDateRange] = useState<DateRange>({
     from: subDays(new Date(), 30),
     to: new Date(),
@@ -229,6 +233,7 @@ export default function VendorAnalyticsPage() {
         { status: 'Delivered', count: orderStats.delivered },
       ]
     : []
+  const activeCurrency = currency || defaultCurrency
 
   return (
     <div className='space-y-6'>
@@ -257,7 +262,11 @@ export default function VendorAnalyticsPage() {
         <MetricCard
           icon={<DollarSign className='w-6 h-6' />}
           label='Total Revenue'
-          value={metrics ? formatCurrency(metrics.totalRevenue) : '$0'}
+          value={
+            metrics
+              ? formatCurrency(metrics.totalRevenue, activeCurrency)
+              : formatCurrency(0, activeCurrency)
+          }
           changeType='positive'
           change={`${metrics?.conversionMetric || 0}% conversion`}
         />
@@ -271,7 +280,11 @@ export default function VendorAnalyticsPage() {
         <MetricCard
           icon={<TrendingUp className='w-6 h-6' />}
           label='Average Order Value'
-          value={metrics ? formatCurrency(metrics.avgOrderValue) : '$0'}
+          value={
+            metrics
+              ? formatCurrency(metrics.avgOrderValue, activeCurrency)
+              : formatCurrency(0, activeCurrency)
+          }
         />
         <MetricCard
           icon={<DollarSign className='w-6 h-6' />}

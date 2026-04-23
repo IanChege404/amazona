@@ -60,7 +60,24 @@ const settingSchema = new Schema<ISetting>(
         code: { type: String, required: true },
       },
     ],
+    headerMenus: [
+      {
+        name: { type: String, required: true },
+        href: { type: String, required: true },
+      },
+    ],
     defaultLanguage: { type: String, required: true },
+    footerSections: [
+      {
+        title: { type: String, required: true },
+        links: [
+          {
+            name: { type: String, required: true },
+            href: { type: String, required: true },
+          },
+        ],
+      },
+    ],
     availableCurrencies: [
       {
         name: {

@@ -11,6 +11,8 @@ import { notFound } from 'next/navigation'
 import useCartStore from '@/hooks/use-cart-store'
 import useSettingStore from '@/hooks/use-setting-store'
 import { useTranslations } from 'next-intl'
+import { useEffect } from 'react'
+import { debugLog } from '@/lib/debug'
 
 export default function CartAddItem({ itemId }: { itemId: string }) {
   const {
@@ -24,7 +26,32 @@ export default function CartAddItem({ itemId }: { itemId: string }) {
   const item = items.find((x) => x.clientId === itemId)
 
   const t = useTranslations()
-  if (!item) return notFound()
+
+  // Log page mount and item details
+  useEffect(() => {
+    if (item) {
+      debugLog('CartAddItem', 'Item confirmation page loaded', {
+        itemId,
+        productId: item.product,
+        productName: item.name,
+        quantity: item.quantity,
+        color: item.color,
+        size: item.size,
+        totalCartItems: items.length,
+        itemsPrice,
+      })
+    } else {
+      debugLog('CartAddItem', 'Item not found - will show 404', {
+        itemId,
+        totalCartItems: items.length,
+      })
+    }
+  }, [itemId, item, items.length, itemsPrice])
+
+  if (!item) {
+    debugLog('CartAddItem', 'Rendering 404 - item not found', { itemId })
+    return notFound()
+  }
   return (
     <div>
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4'>

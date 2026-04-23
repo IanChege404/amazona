@@ -1,0 +1,3217 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "email": "admin@example.com",
+      "password": "$2a$05$obNj06I/lLzFdebmQlJAYOUmThikeTBjTbrp9U5ErTNZFSHcJJf.q",
+      "role": "admin",
+      "address": {
+        "fullName": "John Doe",
+        "street": "111 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10001",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Stripe",
+      "emailVerified": false
+    },
+    {
+      "name": "Jane",
+      "email": "jane@example.com",
+      "password": "$2a$05$3ONVhg3brzUdZxDj.k6lFuqk2Ar9qxoa75CqvkK4PPbDPq8y.jLsO",
+      "role": "user",
+      "address": {
+        "fullName": "Jane Harris",
+        "street": "222 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "1002",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Cash On Delivery",
+      "emailVerified": false
+    },
+    {
+      "name": "Jack",
+      "email": "jack@example.com",
+      "password": "$2a$05$Mc8HygX5A9thxATWtbUb7eV.BCaT/Ul./9joODNLD41XqN3cYxeS6",
+      "role": "user",
+      "address": {
+        "fullName": "Jack Ryan",
+        "street": "333 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "1003",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "PayPal",
+      "emailVerified": false
+    },
+    {
+      "name": "Sarah",
+      "email": "sarah@example.com",
+      "password": "$2a$05$u5InBjrpNesvXiVZazdi/Oa2BghOn5wMmuJ3ILeyv9cNpHlucjW6C",
+      "role": "user",
+      "address": {
+        "fullName": "Sarah Smith",
+        "street": "444 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "1005",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Cash On Delivery",
+      "emailVerified": false
+    },
+    {
+      "name": "Michael",
+      "email": "michael@example.com",
+      "password": "$2a$05$MN/2PnDWKTv2NdggrRil6.ZhJcRCP8rBHGuEndKnVFhES4o7XHnR6",
+      "role": "user",
+      "address": {
+        "fullName": "John Alexander",
+        "street": "555 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "1006",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "PayPal",
+      "emailVerified": false
+    },
+    {
+      "name": "Emily",
+      "email": "emily@example.com",
+      "password": "$2a$05$0q88jJGk0OrYG2jmH.3VL.wtrjbZR4RiHo1XZq/W3x6CimpW2iWza",
+      "role": "user",
+      "address": {
+        "fullName": "Emily Johnson",
+        "street": "666 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10001",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Stripe",
+      "emailVerified": false
+    },
+    {
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password": "$2a$05$2zgc6hIhRhrgyVza18papOgqj74cUSbFjU6xLHrEy5574HyDosaW6",
+      "role": "user",
+      "address": {
+        "fullName": "Alice Cooper",
+        "street": "777 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10007",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Cash On Delivery",
+      "emailVerified": false
+    },
+    {
+      "name": "Tom",
+      "email": "tom@example.com",
+      "password": "$2a$05$u9wNQ4MG/CVAjZAtXhuULONt5VY3SxVr6EXDT0tMhkgkpy9asTwCW",
+      "role": "user",
+      "address": {
+        "fullName": "Tom Hanks",
+        "street": "888 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10008",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Stripe",
+      "emailVerified": false
+    },
+    {
+      "name": "Linda",
+      "email": "linda@example.com",
+      "password": "$2a$05$aOzQP84uAo65qKRGIYiIgeEQbqQJW0N.4bwjmrzAuU.DzBV.pi.kK",
+      "role": "user",
+      "address": {
+        "fullName": "Linda Holmes",
+        "street": "999 Main St",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10009",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "PayPal",
+      "emailVerified": false
+    },
+    {
+      "name": "George",
+      "email": "george@example.com",
+      "password": "$2a$05$3wyiqX.HJsPOdNFslABLA.k2hcwg63VoBfYxIXihoTv92aoJ6Y4X.",
+      "role": "user",
+      "address": {
+        "fullName": "George Smith",
+        "street": "101 First Ave",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10010",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Stripe",
+      "emailVerified": false
+    },
+    {
+      "name": "Jessica",
+      "email": "jessica@example.com",
+      "password": "$2a$05$pRTA9NsYCjFHmtrahdRbhevG6QyVL8YkTE4MVKmFBzZbxZk.aiCFy",
+      "role": "user",
+      "address": {
+        "fullName": "Jessica Brown",
+        "street": "102 First Ave",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10011",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Cash On Delivery",
+      "emailVerified": false
+    },
+    {
+      "name": "Chris",
+      "email": "chris@example.com",
+      "password": "$2a$05$x5nvShHYvyYoKAdy.DwZ2ethwnnn6dl1RbRO.UhAOrs5sP6/WSJmG",
+      "role": "user",
+      "address": {
+        "fullName": "Chris Evans",
+        "street": "103 First Ave",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10012",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "PayPal",
+      "emailVerified": false
+    },
+    {
+      "name": "Samantha",
+      "email": "samantha@example.com",
+      "password": "$2a$05$4yKylq6irmb1AVnMzXtN5uzqaihxWMPcr3c3TY7TNyh.YZlpHfUlO",
+      "role": "user",
+      "address": {
+        "fullName": "Samantha Wilson",
+        "street": "104 First Ave",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10013",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Stripe",
+      "emailVerified": false
+    },
+    {
+      "name": "David",
+      "email": "david@example.com",
+      "password": "$2a$05$uY6qR.x9sVOrgKU0X/XMueh5seDYQWTAm5cobdGGoVG1B8Tly7MYC",
+      "role": "user",
+      "address": {
+        "fullName": "David Lee",
+        "street": "105 First Ave",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10014",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "Cash On Delivery",
+      "emailVerified": false
+    },
+    {
+      "name": "Anna",
+      "email": "anna@example.com",
+      "password": "$2a$05$0lw6smmbF7uoTHjqLb60feREwzqYNaUqMjxnush6WxwKahhfImR8a",
+      "role": "user",
+      "address": {
+        "fullName": "Anna Smith",
+        "street": "106 First Ave",
+        "city": "New York",
+        "province": "NY",
+        "postalCode": "10015",
+        "country": "Kenya",
+        "phone": "123-456-7890"
+      },
+      "paymentMethod": "PayPal",
+      "emailVerified": false
+    }
+  ],
+  "products": [
+    {
+      "name": "Nike Mens Slim-fit Long-Sleeve T-Shirt",
+      "slug": "nike-mens-slim-fit-long-sleeve-t-shirt",
+      "category": "T-Shirts",
+      "images": [
+        "/images/p11-1.jpg",
+        "/images/p11-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 21.8,
+      "listPrice": 0,
+      "brand": "Nike",
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 9,
+      "countInStock": 11,
+      "description": "Made with chemicals safer for human health and the environment",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Green",
+        "Red",
+        "Black"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Jerzees Long-Sleeve Heavyweight Blend T-Shirt",
+      "slug": "jerzees-long-sleeve-heavyweight-blend-t-shirt",
+      "category": "T-Shirts",
+      "images": [
+        "/images/p12-1.jpg",
+        "/images/p12-2.jpg",
+        "/images/p12-3.jpg",
+        "/images/p12-4.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 23.78,
+      "listPrice": 0,
+      "brand": "Jerzees",
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 29,
+      "countInStock": 12,
+      "description": "Made with sustainably sourced USA grown cotton; Shoulder-to-shoulder tape; double-needle coverstitched front neck; Set-in sleeves; Rib cuffs with concealed seams; Seamless body for a wide printing area",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Yellow",
+        "Red",
+        "Black"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Jerzees Men's Long-Sleeve T-Shirt",
+      "slug": "jerzees-men-long-sleeve-t-shirt",
+      "category": "T-Shirts",
+      "brand": "Jerzees",
+      "images": [
+        "/images/p13-1.jpg",
+        "/images/p13-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 13.86,
+      "listPrice": 16.03,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 55,
+      "countInStock": 13,
+      "description": "The Jerzees long sleeve t-shirt is made with dri-power technology that wicks away moisture to keep you cool and dry throughout your day. We also included a rib collar and cuffs for added durability, and a lay-flat collar for comfort. If you are looking for a versatile shirt that you can wear throughout the transitioning seasons, then look no further.",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Green",
+        "White"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts",
+      "slug": "decrum-mens-plain-long-sleeve-t-shirt-comfortable-soft-fashion-v-neck-full-sleeves-jersey-shirts",
+      "category": "T-Shirts",
+      "brand": "Jerzees",
+      "images": [
+        "/images/p14-1.jpg",
+        "/images/p14-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 26.95,
+      "listPrice": 46.03,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 54,
+      "countInStock": 14,
+      "description": "Elevate your outfit with this soft long sleeve t shirt men. This full sleeves tee is the ultimate upgrade from your regular cotton t-shirt. ",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt",
+      "slug": "muscle-cmdr-mens-slim-fit-henley-shirt-longshort-business-sleeve-casual-3-metal-buton-placket-casual-stylish-t-shirt",
+      "category": "T-Shirts",
+      "brand": " Muscle Cmdr",
+      "images": [
+        "/images/p15-1.jpg",
+        "/images/p15-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 29.99,
+      "listPrice": 35.99,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 54,
+      "countInStock": 15,
+      "description": "Slim Fit Design:Men's Muscle Slim Fit Button Henley Shirts are designed to fit snugly against your body, accentuating your muscles and creating a sleek silhouette that's perfect for any occasion. ",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Green",
+        "Yellow"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Hanes Mens Long Sleeve Beefy Henley Shirt",
+      "slug": "hanes-mens-long-sleeve-beefy-henley-shirt",
+      "category": "T-Shirts",
+      "brand": "Jerzees",
+      "images": [
+        "/images/p16-1.jpg",
+        "/images/p16-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 25.3,
+      "listPrice": 32.99,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 16,
+      "numSales": 56,
+      "description": "Heavyweight cotton (Heathers are 60% cotton/40% polyester; Pebblestone is 75% cotton/25% polyester)",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Grey",
+        "White"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans",
+      "slug": "silver-jeans-co-mens-jace-slim-fit-bootcut-jeans",
+      "category": "Jeans",
+      "brand": "Silver Jeans Co",
+      "images": [
+        "/images/p21-1.jpg",
+        "/images/p21-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 95.34,
+      "listPrice": 0,
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 54,
+      "numSales": 21,
+      "description": "Silver Jeans Co. Jace Slim Fit Bootcut Jeans - Consider Jace a modern cowboy jean. It sits below the waist and features a slim fit through the hip and thigh. Finished with an 18” bootcut leg opening that complements the slimmer silhouette while still fitting over boots",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Levi's mens 505 Regular Fit Jeans (Also Available in Big & Tall)",
+      "slug": "levis-mens-505-regular-fit-jeans-also-available-in-big-tall",
+      "category": "Jeans",
+      "brand": "Levi's",
+      "images": [
+        "/images/p22-1.jpg",
+        "/images/p22-2.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 59.99,
+      "listPrice": 69.99,
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 22,
+      "numSales": 54,
+      "description": "A veritable classic, this 505 is made to have a comfortable look and style.",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Essentials Mens Straight-Fit Stretch Jean",
+      "slug": "essentials-mens-straight-fit-stretch-jean",
+      "category": "Jeans",
+      "brand": "Essentials",
+      "images": [
+        "/images/p23-1.jpg",
+        "/images/p23-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 38.9,
+      "listPrice": 45,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 23,
+      "numSales": 54,
+      "description": "These classic 5-pocket straight-fit jeans are crafted with a bit of stretch for additional comfort and to help maintain their shape",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Grey",
+        "Blue"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Buffalo David Bitton Mens Men's Driven Relaxed Denim JeansJeans",
+      "slug": "buffalo-david-bitton-mens-mens-driven-relaxed-denim-jeansjeans",
+      "category": "Jeans",
+      "brand": "Buffalo David Bitton",
+      "images": [
+        "/images/p24-1.jpg",
+        "/images/p24-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 69.99,
+      "listPrice": 100,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 24,
+      "numSales": 53,
+      "description": "Stretch recycled denim jeans in an authentic and sanded wash blue. Features a comfortable low-rise waist with a relaxed fit at the leg. The distressed look gives these jeans an effortlessly worn-in feel. The eco-friendly logo patch in tan and red is at the back waistband. The signature maple leaf graphic is debossed at the zip-fly.",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Dickies Mens Relaxed Fit Carpenter Jean",
+      "slug": "dickies-mens-relaxed-fit-carpenter-jean",
+      "category": "Jeans",
+      "brand": "Dickies",
+      "images": [
+        "/images/p25-1.jpg",
+        "/images/p25-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 95.34,
+      "listPrice": 0,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 25,
+      "numSales": 48,
+      "description": "Relaxed work jean with traditional carpenter-style pockets and logo patch at back pockets",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean",
+      "slug": "wrangler-mens-premium-performance-cowboy-cut-slim-fit-jean",
+      "category": "Jeans",
+      "brand": "Wrangler",
+      "images": [
+        "/images/p26-1.jpg",
+        "/images/p26-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 81.78,
+      "listPrice": 149.99,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 26,
+      "numSales": 48,
+      "description": "Designed with a functional fit in mind, these jeans are made to stack over your favorite pair of boots. Constructed with a slim fit in the waist, seat, and thigh, this jean is made for both function and comfort for long days in the saddle.",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Seiko Men's Analogue Watch with Black Dial",
+      "slug": "seiko-mens-analogue-watch-with-black-dial",
+      "category": "Wrist Watches",
+      "brand": "Seiko",
+      "images": [
+        "/images/p31-1.jpg",
+        "/images/p31-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 530,
+      "listPrice": 0,
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 31,
+      "numSales": 48,
+      "description": "Casing: Case made of stainless steel Case shape: round Case colour: silver Glass: Hardlex Clasp type: Fold over clasp with safety",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch",
+      "slug": "seiko-5-sport-srpj83-beige-dial-nylon-automatic-watch-beige-automatic-watch",
+      "category": "Wrist Watches",
+      "brand": "Seiko",
+      "images": [
+        "/images/p32-1.jpg",
+        "/images/p32-2.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 375.83,
+      "listPrice": 400,
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 32,
+      "numSales": 48,
+      "description": "Seiko 5 Sports Collection Inspired by vintage field/aviator style: Automatic with manual winding capability",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Casio Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch ",
+      "slug": "casio-mens-heavy-duty-analog-quartz-stainless-steel-strap-silver-42-casual-watch",
+      "category": "Wrist Watches",
+      "brand": "Casio",
+      "images": [
+        "/images/p33-1.jpg",
+        "/images/p33-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 60.78,
+      "listPrice": 0,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 33,
+      "numSales": 48,
+      "description": "The Casio range is growing with this model  MWA-100H-1AVEF. Sporting a stainless steel case with a brushed finish, it will easily withstand all the shocks of everyday life.",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch",
+      "slug": "casio-classic-silver-tone-stainless-steel-band-date-indicator-watch",
+      "category": "Wrist Watches",
+      "brand": "Casio",
+      "images": [
+        "/images/p34-1.jpg",
+        "/images/p34-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 34.22,
+      "listPrice": 54.99,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 34,
+      "numSales": 48,
+      "description": "The new MTPVD01D-7EV is a classic 50 meter water resistant stainless steel watch now updated with a white dial. This elegant 3 hand, date display timepiece is perfect for any setting.",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Fossil Men's Grant Stainless Steel Quartz Chronograph Watch",
+      "slug": "fossil-mens-grant-stainless-steel-quartz-chronograph-watch",
+      "category": "Wrist Watches",
+      "brand": "Fossil",
+      "images": [
+        "/images/p35-1.jpg",
+        "/images/p35-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 171.22,
+      "listPrice": 225,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 35,
+      "numSales": 48,
+      "description": "Chronograph watch featuring silver- and blue-tone case, blue sunray dial, and silver-tone Roman numeral indices",
+      "sizes": [],
+      "colors": [
+        "Blue",
+        "Black",
+        "Sliver"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Fossil Men's Machine Stainless Steel Quartz Watch",
+      "slug": "fossil-mens-machine-stainless-steel-quartz-watch",
+      "category": "Wrist Watches",
+      "brand": "Fossil",
+      "images": [
+        "/images/p36-1.jpg",
+        "/images/p36-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 158.21,
+      "listPrice": 229,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 36,
+      "numSales": 49,
+      "description": "In masculine black-on-black, our industrial-inspired Machine watch will add a fresh, modern touch to your casual look. This Machine watch also features a three hand movement on a stainless steel bracelet.",
+      "sizes": [],
+      "colors": [
+        "Brown",
+        "Sliver",
+        "Black"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "adidas Mens Grand Court 2.0 Training Shoes Training Shoes",
+      "slug": "adidas-mens-grand-court-20-training-shoes-training-shoes",
+      "category": "Shoes",
+      "brand": "adidas",
+      "images": [
+        "/images/p41-1.jpg",
+        "/images/p41-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 81.99,
+      "listPrice": 0,
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 41,
+      "numSales": 48,
+      "description": "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+      "sizes": [
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "ziitop Men's Running Walking Shoes Fashion Sneakers Mesh Dress Shoes Business Oxfords Shoes Lightweight Casual Breathable Work Formal Shoes",
+      "slug": "ziitop-mens-running-walking-shoes-fashion-sneakers-mesh-dress-shoes-business-oxfords-shoes-lightweight-casual-breathable-work-formal-shoes",
+      "category": "Shoes",
+      "brand": "ziitop",
+      "images": [
+        "/images/p42-1.jpg",
+        "/images/p42-2.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 39.97,
+      "listPrice": 49.96,
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 42,
+      "numSales": 50,
+      "description": "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+      "sizes": [
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe",
+      "slug": "skechers-mens-summits-high-range-hands-free-slip-in-shoes-work-shoe",
+      "category": "Shoes",
+      "brand": "Skechers",
+      "images": [
+        "/images/p43-1.jpg",
+        "/images/p43-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 99.99,
+      "listPrice": 0,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 43,
+      "numSales": 72,
+      "description": "Step into easy-wearing comfort with Skechers Hands Free Slip-ins™: Summits - High Range. Along with our Exclusive Heel Pillow™ holds your foot securely in place, this vegan style features a unique pop-up Skechers Slip-ins™ molded heel panel, a mesh upper with fixed laces",
+      "sizes": [
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "Navy",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes",
+      "slug": "dlwkipv-mens-running-shoes-tennis-cross-training-sneakers-fashion-non-slip-outdoor-walking-jogging-shoes-mesh-light-flexible-comfortable-breathable-shoes",
+      "category": "Shoes",
+      "brand": "DLWKIPV",
+      "images": [
+        "/images/p44-1.jpg",
+        "/images/p44-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 36.99,
+      "listPrice": 56.9,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 44,
+      "numSales": 72,
+      "description": "Design: Mesh vamp, ventilation. Sole anti-slip groove design, shock absorption and anti-slip. The inside of the shoe is wide and soft, bringing you a good comfortable experience",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "colors": [
+        "Brown",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "ASICS Men's GT-2000 13 Running Shoes",
+      "slug": "asics-mens-gt-2000-13-running-shoes",
+      "category": "Shoes",
+      "brand": "ASICS",
+      "images": [
+        "/images/p45-1.jpg",
+        "/images/p45-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 179.95,
+      "listPrice": 200,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 45,
+      "numSales": 64,
+      "description": "At least 50% of the shoe's main upper material is made with recycled content to reduce waste and carbon emissions",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "colors": [
+        "Blue",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes",
+      "slug": "mens-wearbreeze-shoes-urban-ultra-comfortable-shoes-breeze-shoes-for-men-mens-mesh-dress-sneakers-business-shoes",
+      "category": "Shoes",
+      "brand": "Generic",
+      "images": [
+        "/images/p46-1.jpg",
+        "/images/p46-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 32.99,
+      "listPrice": 80,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 46,
+      "numSales": 48,
+      "description": "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "colors": [
+        "Green",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Nike Mens Slim-fit Long-Sleeve T-Shirt (Kenya Edition)",
+      "slug": "nike-mens-slim-fit-long-sleeve-t-shirt-ke",
+      "category": "T-Shirts",
+      "images": [
+        "/images/p11-1.jpg",
+        "/images/p11-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 21.8,
+      "listPrice": 0,
+      "brand": "Nike",
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 14,
+      "countInStock": 21,
+      "description": "Made with chemicals safer for human health and the environment",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Green",
+        "Red",
+        "Black"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Jerzees Long-Sleeve Heavyweight Blend T-Shirt (Kenya Edition)",
+      "slug": "jerzees-long-sleeve-heavyweight-blend-t-shirt-ke",
+      "category": "T-Shirts",
+      "images": [
+        "/images/p12-1.jpg",
+        "/images/p12-2.jpg",
+        "/images/p12-3.jpg",
+        "/images/p12-4.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 23.78,
+      "listPrice": 0,
+      "brand": "Jerzees",
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 34,
+      "countInStock": 22,
+      "description": "Made with sustainably sourced USA grown cotton; Shoulder-to-shoulder tape; double-needle coverstitched front neck; Set-in sleeves; Rib cuffs with concealed seams; Seamless body for a wide printing area",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Yellow",
+        "Red",
+        "Black"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Jerzees Men's Long-Sleeve T-Shirt (Kenya Edition)",
+      "slug": "jerzees-men-long-sleeve-t-shirt-ke",
+      "category": "T-Shirts",
+      "brand": "Jerzees",
+      "images": [
+        "/images/p13-1.jpg",
+        "/images/p13-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 13.86,
+      "listPrice": 16.03,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 60,
+      "countInStock": 23,
+      "description": "The Jerzees long sleeve t-shirt is made with dri-power technology that wicks away moisture to keep you cool and dry throughout your day. We also included a rib collar and cuffs for added durability, and a lay-flat collar for comfort. If you are looking for a versatile shirt that you can wear throughout the transitioning seasons, then look no further.",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Green",
+        "White"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Decrum Mens Plain Long Sleeve T-Shirt - Comfortable Soft Fashion V Neck Full Sleeves Jersey Shirts (Kenya Edition)",
+      "slug": "decrum-mens-plain-long-sleeve-t-shirt-comfortable-soft-fashion-v-neck-full-sleeves-jersey-shirts-ke",
+      "category": "T-Shirts",
+      "brand": "Jerzees",
+      "images": [
+        "/images/p14-1.jpg",
+        "/images/p14-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 26.95,
+      "listPrice": 46.03,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 59,
+      "countInStock": 24,
+      "description": "Elevate your outfit with this soft long sleeve t shirt men. This full sleeves tee is the ultimate upgrade from your regular cotton t-shirt. ",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt (Kenya Edition)",
+      "slug": "muscle-cmdr-mens-slim-fit-henley-shirt-longshort-business-sleeve-casual-3-metal-buton-placket-casual-stylish-t-shirt-ke",
+      "category": "T-Shirts",
+      "brand": " Muscle Cmdr",
+      "images": [
+        "/images/p15-1.jpg",
+        "/images/p15-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 29.99,
+      "listPrice": 35.99,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "numSales": 59,
+      "countInStock": 25,
+      "description": "Slim Fit Design:Men's Muscle Slim Fit Button Henley Shirts are designed to fit snugly against your body, accentuating your muscles and creating a sleek silhouette that's perfect for any occasion. ",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Green",
+        "Yellow"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Hanes Mens Long Sleeve Beefy Henley Shirt (Kenya Edition)",
+      "slug": "hanes-mens-long-sleeve-beefy-henley-shirt-ke",
+      "category": "T-Shirts",
+      "brand": "Jerzees",
+      "images": [
+        "/images/p16-1.jpg",
+        "/images/p16-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 25.3,
+      "listPrice": 32.99,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 26,
+      "numSales": 61,
+      "description": "Heavyweight cotton (Heathers are 60% cotton/40% polyester; Pebblestone is 75% cotton/25% polyester)",
+      "sizes": [
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Grey",
+        "White"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans (Kenya Edition)",
+      "slug": "silver-jeans-co-mens-jace-slim-fit-bootcut-jeans-ke",
+      "category": "Jeans",
+      "brand": "Silver Jeans Co",
+      "images": [
+        "/images/p21-1.jpg",
+        "/images/p21-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 95.34,
+      "listPrice": 0,
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 64,
+      "numSales": 26,
+      "description": "Silver Jeans Co. Jace Slim Fit Bootcut Jeans - Consider Jace a modern cowboy jean. It sits below the waist and features a slim fit through the hip and thigh. Finished with an 18” bootcut leg opening that complements the slimmer silhouette while still fitting over boots",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Levi's mens 505 Regular Fit Jeans (Also Available in Big & Tall) (Kenya Edition)",
+      "slug": "levis-mens-505-regular-fit-jeans-also-available-in-big-tall-ke",
+      "category": "Jeans",
+      "brand": "Levi's",
+      "images": [
+        "/images/p22-1.jpg",
+        "/images/p22-2.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 59.99,
+      "listPrice": 69.99,
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 32,
+      "numSales": 59,
+      "description": "A veritable classic, this 505 is made to have a comfortable look and style.",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Essentials Mens Straight-Fit Stretch Jean (Kenya Edition)",
+      "slug": "essentials-mens-straight-fit-stretch-jean-ke",
+      "category": "Jeans",
+      "brand": "Essentials",
+      "images": [
+        "/images/p23-1.jpg",
+        "/images/p23-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 38.9,
+      "listPrice": 45,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 33,
+      "numSales": 59,
+      "description": "These classic 5-pocket straight-fit jeans are crafted with a bit of stretch for additional comfort and to help maintain their shape",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Grey",
+        "Blue"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Buffalo David Bitton Mens Men's Driven Relaxed Denim JeansJeans (Kenya Edition)",
+      "slug": "buffalo-david-bitton-mens-mens-driven-relaxed-denim-jeansjeans-ke",
+      "category": "Jeans",
+      "brand": "Buffalo David Bitton",
+      "images": [
+        "/images/p24-1.jpg",
+        "/images/p24-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 69.99,
+      "listPrice": 100,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 34,
+      "numSales": 58,
+      "description": "Stretch recycled denim jeans in an authentic and sanded wash blue. Features a comfortable low-rise waist with a relaxed fit at the leg. The distressed look gives these jeans an effortlessly worn-in feel. The eco-friendly logo patch in tan and red is at the back waistband. The signature maple leaf graphic is debossed at the zip-fly.",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Dickies Mens Relaxed Fit Carpenter Jean (Kenya Edition)",
+      "slug": "dickies-mens-relaxed-fit-carpenter-jean-ke",
+      "category": "Jeans",
+      "brand": "Dickies",
+      "images": [
+        "/images/p25-1.jpg",
+        "/images/p25-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 95.34,
+      "listPrice": 0,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 35,
+      "numSales": 53,
+      "description": "Relaxed work jean with traditional carpenter-style pockets and logo patch at back pockets",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean (Kenya Edition)",
+      "slug": "wrangler-mens-premium-performance-cowboy-cut-slim-fit-jean-ke",
+      "category": "Jeans",
+      "brand": "Wrangler",
+      "images": [
+        "/images/p26-1.jpg",
+        "/images/p26-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 81.78,
+      "listPrice": 149.99,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 36,
+      "numSales": 53,
+      "description": "Designed with a functional fit in mind, these jeans are made to stack over your favorite pair of boots. Constructed with a slim fit in the waist, seat, and thigh, this jean is made for both function and comfort for long days in the saddle.",
+      "sizes": [
+        "30Wx30L",
+        "34Wx30L",
+        "36Wx30L"
+      ],
+      "colors": [
+        "Blue",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Seiko Men's Analogue Watch with Black Dial (Kenya Edition)",
+      "slug": "seiko-mens-analogue-watch-with-black-dial-ke",
+      "category": "Wrist Watches",
+      "brand": "Seiko",
+      "images": [
+        "/images/p31-1.jpg",
+        "/images/p31-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 530,
+      "listPrice": 0,
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 41,
+      "numSales": 53,
+      "description": "Casing: Case made of stainless steel Case shape: round Case colour: silver Glass: Hardlex Clasp type: Fold over clasp with safety",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "SEIKO 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Watch (Kenya Edition)",
+      "slug": "seiko-5-sport-srpj83-beige-dial-nylon-automatic-watch-beige-automatic-watch-ke",
+      "category": "Wrist Watches",
+      "brand": "Seiko",
+      "images": [
+        "/images/p32-1.jpg",
+        "/images/p32-2.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 375.83,
+      "listPrice": 400,
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 42,
+      "numSales": 53,
+      "description": "Seiko 5 Sports Collection Inspired by vintage field/aviator style: Automatic with manual winding capability",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Casio Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch  (Kenya Edition)",
+      "slug": "casio-mens-heavy-duty-analog-quartz-stainless-steel-strap-silver-42-casual-watch-ke",
+      "category": "Wrist Watches",
+      "brand": "Casio",
+      "images": [
+        "/images/p33-1.jpg",
+        "/images/p33-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 60.78,
+      "listPrice": 0,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 43,
+      "numSales": 53,
+      "description": "The Casio range is growing with this model  MWA-100H-1AVEF. Sporting a stainless steel case with a brushed finish, it will easily withstand all the shocks of everyday life.",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Casio Classic Silver-Tone Stainless Steel Band Date Indicator Watch (Kenya Edition)",
+      "slug": "casio-classic-silver-tone-stainless-steel-band-date-indicator-watch-ke",
+      "category": "Wrist Watches",
+      "brand": "Casio",
+      "images": [
+        "/images/p34-1.jpg",
+        "/images/p34-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 34.22,
+      "listPrice": 54.99,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 44,
+      "numSales": 53,
+      "description": "The new MTPVD01D-7EV is a classic 50 meter water resistant stainless steel watch now updated with a white dial. This elegant 3 hand, date display timepiece is perfect for any setting.",
+      "sizes": [],
+      "colors": [],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Fossil Men's Grant Stainless Steel Quartz Chronograph Watch (Kenya Edition)",
+      "slug": "fossil-mens-grant-stainless-steel-quartz-chronograph-watch-ke",
+      "category": "Wrist Watches",
+      "brand": "Fossil",
+      "images": [
+        "/images/p35-1.jpg",
+        "/images/p35-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 171.22,
+      "listPrice": 225,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 45,
+      "numSales": 53,
+      "description": "Chronograph watch featuring silver- and blue-tone case, blue sunray dial, and silver-tone Roman numeral indices",
+      "sizes": [],
+      "colors": [
+        "Blue",
+        "Black",
+        "Sliver"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Fossil Men's Machine Stainless Steel Quartz Watch (Kenya Edition)",
+      "slug": "fossil-mens-machine-stainless-steel-quartz-watch-ke",
+      "category": "Wrist Watches",
+      "brand": "Fossil",
+      "images": [
+        "/images/p36-1.jpg",
+        "/images/p36-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 158.21,
+      "listPrice": 229,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 46,
+      "numSales": 54,
+      "description": "In masculine black-on-black, our industrial-inspired Machine watch will add a fresh, modern touch to your casual look. This Machine watch also features a three hand movement on a stainless steel bracelet.",
+      "sizes": [],
+      "colors": [
+        "Brown",
+        "Sliver",
+        "Black"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "adidas Mens Grand Court 2.0 Training Shoes Training Shoes (Kenya Edition)",
+      "slug": "adidas-mens-grand-court-20-training-shoes-training-shoes-ke",
+      "category": "Shoes",
+      "brand": "adidas",
+      "images": [
+        "/images/p41-1.jpg",
+        "/images/p41-2.jpg"
+      ],
+      "tags": [
+        "new-arrival"
+      ],
+      "isPublished": true,
+      "price": 81.99,
+      "listPrice": 0,
+      "avgRating": 4.71,
+      "numReviews": 7,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 2
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 51,
+      "numSales": 53,
+      "description": "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+      "sizes": [
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "ziitop Men's Running Walking Shoes Fashion Sneakers Mesh Dress Shoes Business Oxfords Shoes Lightweight Casual Breathable Work Formal Shoes (Kenya Edition)",
+      "slug": "ziitop-mens-running-walking-shoes-fashion-sneakers-mesh-dress-shoes-business-oxfords-shoes-lightweight-casual-breathable-work-formal-shoes-ke",
+      "category": "Shoes",
+      "brand": "ziitop",
+      "images": [
+        "/images/p42-1.jpg",
+        "/images/p42-2.jpg"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 39.97,
+      "listPrice": 49.96,
+      "avgRating": 4.2,
+      "numReviews": 10,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 0
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 52,
+      "numSales": 55,
+      "description": "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+      "sizes": [
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe (Kenya Edition)",
+      "slug": "skechers-mens-summits-high-range-hands-free-slip-in-shoes-work-shoe-ke",
+      "category": "Shoes",
+      "brand": "Skechers",
+      "images": [
+        "/images/p43-1.jpg",
+        "/images/p43-2.jpg"
+      ],
+      "tags": [
+        "best-seller"
+      ],
+      "isPublished": true,
+      "price": 99.99,
+      "listPrice": 0,
+      "avgRating": 4,
+      "numReviews": 12,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 0
+        },
+        {
+          "rating": 3,
+          "count": 2
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 53,
+      "numSales": 77,
+      "description": "Step into easy-wearing comfort with Skechers Hands Free Slip-ins™: Summits - High Range. Along with our Exclusive Heel Pillow™ holds your foot securely in place, this vegan style features a unique pop-up Skechers Slip-ins™ molded heel panel, a mesh upper with fixed laces",
+      "sizes": [
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "Navy",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes (Kenya Edition)",
+      "slug": "dlwkipv-mens-running-shoes-tennis-cross-training-sneakers-fashion-non-slip-outdoor-walking-jogging-shoes-mesh-light-flexible-comfortable-breathable-shoes-ke",
+      "category": "Shoes",
+      "brand": "DLWKIPV",
+      "images": [
+        "/images/p44-1.jpg",
+        "/images/p44-2.jpg"
+      ],
+      "tags": [
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 36.99,
+      "listPrice": 56.9,
+      "avgRating": 3.85,
+      "numReviews": 14,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 0
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 54,
+      "numSales": 77,
+      "description": "Design: Mesh vamp, ventilation. Sole anti-slip groove design, shock absorption and anti-slip. The inside of the shoe is wide and soft, bringing you a good comfortable experience",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "colors": [
+        "Brown",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "ASICS Men's GT-2000 13 Running Shoes (Kenya Edition)",
+      "slug": "asics-mens-gt-2000-13-running-shoes-ke",
+      "category": "Shoes",
+      "brand": "ASICS",
+      "images": [
+        "/images/p45-1.jpg",
+        "/images/p45-2.jpg"
+      ],
+      "tags": [
+        "new-arrival",
+        "featured"
+      ],
+      "isPublished": true,
+      "price": 179.95,
+      "listPrice": 200,
+      "avgRating": 3.66,
+      "numReviews": 15,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 5
+        }
+      ],
+      "countInStock": 55,
+      "numSales": 69,
+      "description": "At least 50% of the shoe's main upper material is made with recycled content to reduce waste and carbon emissions",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "colors": [
+        "Blue",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    },
+    {
+      "name": "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes (Kenya Edition)",
+      "slug": "mens-wearbreeze-shoes-urban-ultra-comfortable-shoes-breeze-shoes-for-men-mens-mesh-dress-sneakers-business-shoes-ke",
+      "category": "Shoes",
+      "brand": "Generic",
+      "images": [
+        "/images/p46-1.jpg",
+        "/images/p46-2.jpg"
+      ],
+      "tags": [
+        "best-seller",
+        "todays-deal"
+      ],
+      "isPublished": true,
+      "price": 32.99,
+      "listPrice": 80,
+      "avgRating": 3.46,
+      "numReviews": 13,
+      "ratingDistribution": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 2
+        },
+        {
+          "rating": 3,
+          "count": 3
+        },
+        {
+          "rating": 4,
+          "count": 4
+        },
+        {
+          "rating": 5,
+          "count": 3
+        }
+      ],
+      "countInStock": 56,
+      "numSales": 53,
+      "description": "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "colors": [
+        "Green",
+        "Black",
+        "Grey"
+      ],
+      "vendorId": "000000000000000000000001",
+      "vendorName": "Default Vendor",
+      "reviews": []
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 1,
+      "title": "Poor quality",
+      "comment": "Very disappointed. The item broke after just a few uses. Not worth the money."
+    },
+    {
+      "rating": 2,
+      "title": "Disappointed",
+      "comment": "Not as expected. The material feels cheap, and it didn't fit well. Wouldn't buy again."
+    },
+    {
+      "rating": 2,
+      "title": "Needs improvement",
+      "comment": "It looks nice but doesn't perform as expected. Wouldn't recommend without upgrades."
+    },
+    {
+      "rating": 3,
+      "title": "not bad",
+      "comment": "This product is decent, the quality is good but it could use some improvements in the details."
+    },
+    {
+      "rating": 3,
+      "title": "Okay, not great",
+      "comment": "It works, but not as well as I hoped. Quality is average and lacks some finishing."
+    },
+    {
+      "rating": 3,
+      "title": "Good product",
+      "comment": "This product is amazing, I love it! The quality is top notch, the material is comfortable and breathable."
+    },
+    {
+      "rating": 4,
+      "title": "Pretty good",
+      "comment": "Solid product! Great value for the price, but there's room for minor improvements."
+    },
+    {
+      "rating": 4,
+      "title": "Very satisfied",
+      "comment": "Good product! High quality and worth the price. Would consider buying again."
+    },
+    {
+      "rating": 4,
+      "title": "Absolutely love it!",
+      "comment": "Perfect in every way! The quality, design, and comfort exceeded all my expectations."
+    },
+    {
+      "rating": 4,
+      "title": "Exceeded expectations!",
+      "comment": "Fantastic product! High quality, feels durable, and performs well. Highly recommend!"
+    },
+    {
+      "rating": 5,
+      "title": "Perfect purchase!",
+      "comment": "Couldn't be happier with this product. The quality is excellent, and it works flawlessly!"
+    },
+    {
+      "rating": 5,
+      "title": "Highly recommend",
+      "comment": "Amazing product! Worth every penny, great design, and feels premium. I'm very satisfied."
+    },
+    {
+      "rating": 5,
+      "title": "Just what I needed",
+      "comment": "Exactly as described! Quality exceeded my expectations, and it arrived quickly."
+    },
+    {
+      "rating": 5,
+      "title": "Excellent choice!",
+      "comment": "This product is outstanding! Everything about it feels top-notch, from material to functionality."
+    },
+    {
+      "rating": 5,
+      "title": "Couldn't ask for more!",
+      "comment": "Love this product! It's durable, stylish, and works great. Would buy again without hesitation."
+    }
+  ],
+  "webPages": [
+    {
+      "title": "About Us",
+      "slug": "about-us",
+      "content": "Welcome to [Your Store Name], your trusted destination for quality products and exceptional service. Our journey began with a mission to bring you the best shopping experience by offering a wide range of products at competitive prices, all in one convenient platform.\n\nAt [Your Store Name], we prioritize customer satisfaction and innovation. Our team works tirelessly to curate a diverse selection of items, from everyday essentials to exclusive deals, ensuring there's something for everyone. We also strive to make your shopping experience seamless with fast shipping, secure payments, and excellent customer support.\n\nAs we continue to grow, our commitment to quality and service remains unwavering. Thank you for choosing [Your Store Name]—we look forward to being a part of your journey and delivering value every step of the way.",
+      "isPublished": true
+    },
+    {
+      "title": "Contact Us",
+      "slug": "contact-us",
+      "content": "We’re here to help! If you have any questions, concerns, or feedback, please don’t hesitate to reach out to us. Our team is ready to assist you and ensure you have the best shopping experience.\n\n**Customer Support**\nFor inquiries about orders, products, or account-related issues, contact our customer support team:\n- **Email:** support@example.com\n- **Phone:** +1 (123) 456-7890\n- **Live Chat:** Available on our website from 9 AM to 6 PM (Monday to Friday).\n\n**Head Office**\nFor corporate or business-related inquiries, reach out to our headquarters:\n- **Address:** 1234 E-Commerce St, Suite 567, Business City, BC 12345\n- **Phone:** +1 (987) 654-3210\n\nWe look forward to assisting you! Your satisfaction is our priority.\n",
+      "isPublished": true
+    },
+    {
+      "title": "Help",
+      "slug": "help",
+      "content": "Welcome to our Help Center! We're here to assist you with any questions or concerns you may have while shopping with us. Whether you need help with orders, account management, or product inquiries, this page provides all the information you need to navigate our platform with ease.\n\n**Placing and Managing Orders**\nPlacing an order is simple and secure. Browse our product categories, add items to your cart, and proceed to checkout. Once your order is placed, you can track its status through your account under the \"My Orders\" section. If you need to modify or cancel your order, please contact us as soon as possible for assistance.\n\n**Shipping and Returns**\nWe offer a variety of shipping options to suit your needs, including standard and express delivery. For detailed shipping costs and delivery timelines, visit our Shipping Policy page. If you're not satisfied with your purchase, our hassle-free return process allows you to initiate a return within the specified timeframe. Check our Returns Policy for more details.\n\n**Account and Support**\nManaging your account is easy. Log in to update your personal information, payment methods, and saved addresses. If you encounter any issues or need further assistance, our customer support team is available via email, live chat, or phone. Visit our Contact Us page for support hours and contact details.",
+      "isPublished": true
+    },
+    {
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "content": "We value your privacy and are committed to protecting your personal information. This Privacy Notice explains how we collect, use, and share your data when you interact with our services. By using our platform, you consent to the practices described herein.\n\nWe collect data such as your name, email address, and payment details to provide you with tailored services and improve your experience. This information may also be used for marketing purposes, but only with your consent. Additionally, we may share your data with trusted third-party providers to facilitate transactions or deliver products.\n\nYour data is safeguarded through robust security measures to prevent unauthorized access. However, you have the right to access, correct, or delete your personal information at any time. For inquiries or concerns regarding your privacy, please contact our support team.",
+      "isPublished": true
+    },
+    {
+      "title": "Conditions of Use",
+      "slug": "conditions-of-use",
+      "content": "Welcome to [Ecommerce Website Name]. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. These terms govern your use of our platform, including browsing, purchasing products, and interacting with any content or services provided. You must be at least 18 years old or have the consent of a parent or guardian to use this website. Any breach of these terms may result in the termination of your access to our platform.\n\nWe strive to ensure all product descriptions, pricing, and availability information on our website are accurate. However, errors may occur, and we reserve the right to correct them without prior notice. All purchases are subject to our return and refund policy. By using our site, you acknowledge that your personal information will be processed according to our privacy policy, ensuring your data is handled securely and responsibly. Please review these terms carefully before proceeding with any transactions.\n",
+      "isPublished": true
+    },
+    {
+      "title": "Customer Service",
+      "slug": "customer-service",
+      "content": "At [Your Store Name], our customer service team is here to ensure you have the best shopping experience. Whether you need assistance with orders, product details, or returns, we are committed to providing prompt and helpful support.\n\nIf you have questions or concerns, please reach out to us through our multiple contact options:\n- **Email:** support@example.com\n- **Phone:** +1 (123) 456-7890\n- **Live Chat:** Available on our website for instant assistance\n\nWe also provide helpful resources such as order tracking, product guides, and FAQs to assist you with common inquiries. Your satisfaction is our priority, and we’re here to resolve any issues quickly and efficiently. Thank you for choosing us!",
+      "isPublished": true
+    },
+    {
+      "title": "Returns Policy",
+      "slug": "returns-policy",
+      "content": "Returns Policy Content",
+      "isPublished": true
+    },
+    {
+      "title": "Careers",
+      "slug": "careers",
+      "content": "careers Content",
+      "isPublished": true
+    },
+    {
+      "title": "Blog",
+      "slug": "blog",
+      "content": "Blog Content",
+      "isPublished": true
+    },
+    {
+      "title": "Sell Products",
+      "slug": "sell",
+      "content": "Sell Products Content",
+      "isPublished": true
+    },
+    {
+      "title": "Become Affiliate",
+      "slug": "become-affiliate",
+      "content": "Become Affiliate Content",
+      "isPublished": true
+    },
+    {
+      "title": "Advertise Your Products",
+      "slug": "advertise",
+      "content": "Advertise Your Products",
+      "isPublished": true
+    },
+    {
+      "title": "Shipping Rates & Policies",
+      "slug": "shipping",
+      "content": "Shipping Rates & Policies",
+      "isPublished": true
+    }
+  ],
+  "headerMenus": [
+    {
+      "name": "Today's Deal",
+      "href": "/search?tag=todays-deal"
+    },
+    {
+      "name": "New Arrivals",
+      "href": "/search?tag=new-arrival"
+    },
+    {
+      "name": "Featured Products",
+      "href": "/search?tag=featured"
+    },
+    {
+      "name": "Best Sellers",
+      "href": "/search?tag=best-seller"
+    },
+    {
+      "name": "Browsing History",
+      "href": "/#browsing-history"
+    },
+    {
+      "name": "Customer Service",
+      "href": "/page/customer-service"
+    },
+    {
+      "name": "About Us",
+      "href": "/page/about-us"
+    },
+    {
+      "name": "Help",
+      "href": "/page/help"
+    }
+  ],
+  "carousels": [
+    {
+      "title": "Most Popular Shoes For Sale",
+      "buttonCaption": "Shop Now",
+      "image": "/images/banner3.jpg",
+      "url": "/search?category=Shoes",
+      "isPublished": true
+    },
+    {
+      "title": "Best Sellers in T-Shirts",
+      "buttonCaption": "Shop Now",
+      "image": "/images/banner1.jpg",
+      "url": "/search?category=T-Shirts",
+      "isPublished": true
+    },
+    {
+      "title": "Best Deals on Wrist Watches",
+      "buttonCaption": "See More",
+      "image": "/images/banner2.jpg",
+      "url": "/search?category=Wrist Watches",
+      "isPublished": true
+    }
+  ],
+  "settings": [
+    {
+      "common": {
+        "freeShippingMinPrice": 35,
+        "isMaintenanceMode": false,
+        "defaultTheme": "Light",
+        "defaultColor": "Gold",
+        "pageSize": 9
+      },
+      "site": {
+        "name": "NxtAmzn",
+        "description": "NxtAmzn is a Kenya-focused multi-vendor marketplace built with Next.js, Tailwind CSS, and MongoDB.",
+        "keywords": "Kenya Ecommerce, Next.js, Tailwind CSS, MongoDB",
+        "url": "https://next-mongo-ecommerce-final.vercel.app",
+        "logo": "/icons/logo.svg",
+        "slogan": "Spend less, enjoy more.",
+        "author": "Next Ecommerce",
+        "copyright": "2000-2024, Next-Ecommerce.com, Inc. or its affiliates",
+        "email": "admin@example.com",
+        "address": "Westlands, Nairobi, Kenya",
+        "phone": "+254 700 000000"
+      },
+      "carousels": [
+        {
+          "title": "Most Popular Shoes For Sale",
+          "buttonCaption": "Shop Now",
+          "image": "/images/banner3.jpg",
+          "url": "/search?category=Shoes"
+        },
+        {
+          "title": "Best Sellers in T-Shirts",
+          "buttonCaption": "Shop Now",
+          "image": "/images/banner1.jpg",
+          "url": "/search?category=T-Shirts"
+        },
+        {
+          "title": "Best Deals on Wrist Watches",
+          "buttonCaption": "See More",
+          "image": "/images/banner2.jpg",
+          "url": "/search?category=Wrist Watches"
+        }
+      ],
+      "availableLanguages": [
+        {
+          "code": "en-US",
+          "name": "English"
+        },
+        {
+          "code": "sw",
+          "name": "Kiswahili"
+        },
+        {
+          "code": "fr",
+          "name": "Français"
+        },
+        {
+          "code": "ar",
+          "name": "العربية"
+        }
+      ],
+      "defaultLanguage": "en-US",
+      "availableCurrencies": [
+        {
+          "name": "Kenyan Shilling",
+          "code": "KES",
+          "symbol": "KSh",
+          "convertRate": 1
+        },
+        {
+          "name": "United States Dollar",
+          "code": "USD",
+          "symbol": "$",
+          "convertRate": 129.5
+        },
+        {
+          "name": "Euro",
+          "code": "EUR",
+          "symbol": "€",
+          "convertRate": 141.2
+        },
+        {
+          "name": "UAE Dirham",
+          "code": "AED",
+          "symbol": "AED",
+          "convertRate": 35.3
+        }
+      ],
+      "defaultCurrency": "KES",
+      "availablePaymentMethods": [
+        {
+          "name": "PayPal",
+          "commission": 0
+        },
+        {
+          "name": "Stripe",
+          "commission": 0
+        },
+        {
+          "name": "Cash On Delivery",
+          "commission": 0
+        }
+      ],
+      "defaultPaymentMethod": "PayPal",
+      "availableDeliveryDates": [
+        {
+          "name": "Tomorrow",
+          "daysToDeliver": 1,
+          "shippingPrice": 12.9,
+          "freeShippingMinPrice": 0
+        },
+        {
+          "name": "Next 3 Days",
+          "daysToDeliver": 3,
+          "shippingPrice": 6.9,
+          "freeShippingMinPrice": 0
+        },
+        {
+          "name": "Next 5 Days",
+          "daysToDeliver": 5,
+          "shippingPrice": 4.9,
+          "freeShippingMinPrice": 35
+        }
+      ],
+      "defaultDeliveryDate": "Next 5 Days"
+    }
+  ]
+}

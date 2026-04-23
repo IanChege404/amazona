@@ -49,7 +49,7 @@ AskReviewOrderItemsEmail.PreviewProps = {
       {
         clientId: '123',
         name: 'Product 1',
-        image: 'https://via.placeholder.com/150',
+        image: '/images/p11-1.jpg',
         price: 100,
         quantity: 1,
         product: '123',

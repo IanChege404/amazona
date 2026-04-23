@@ -5,6 +5,10 @@
   "scripts": {
     "email": "email dev",
     "seed": "npx tsx ./lib/db/seed.ts",
+    "import:static": "npx tsx ./lib/db/import-static-data.ts",
+    "import:static:drop": "npx tsx ./lib/db/import-static-data.ts --drop",
+    "import:amazon-csv": "npx tsx ./lib/db/import-amazon-csv.ts",
+    "import:amazon-csv:dry": "npx tsx ./lib/db/import-amazon-csv.ts --dry-run",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -88,6 +92,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@playwright/test": "^1.59.1",
+    "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",

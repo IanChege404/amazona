@@ -16,10 +16,20 @@ export default function Footer() {
   const router = useRouter()
   const pathname = usePathname()
   const {
-    setting: { site, availableCurrencies, currency },
+    setting: {
+      site,
+      availableCurrencies,
+      availableLanguages,
+      currency,
+      footerSections,
+    },
     setCurrency,
   } = useSettingStore()
-  const { locales } = i18n
+  const sections = footerSections ?? []
+  const languageOptions = (availableLanguages ?? []).map((lang) => ({
+    ...lang,
+    icon: i18n.locales.find((locale) => locale.code === lang.code)?.icon || '🌐',
+  }))
 
   const locale = useLocale()
   const t = useTranslations()
@@ -35,66 +45,24 @@ export default function Footer() {
           {t('Footer.Back to top')}
         </Button>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto'>
-          <div>
-            <h3 className='font-bold mb-2'>{t('Footer.Get to Know Us')}</h3>
-            <ul className='space-y-2'>
-              <li>
-                <Link href='/page/careers'>{t('Footer.Careers')}</Link>
-              </li>
-              <li>
-                <Link href='/page/blog'>{t('Footer.Blog')}</Link>
-              </li>
-              <li>
-                <Link href='/page/about-us'>
-                  {t('Footer.About name', { name: site.name })}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className='font-bold mb-2'>{t('Footer.Make Money with Us')}</h3>
-            <ul className='space-y-2'>
-              <li>
-                <Link href='/page/sell'>
-                  {t('Footer.Sell products on', { name: site.name })}
-                </Link>
-              </li>
-              <li>
-                <Link href='/page/become-affiliate'>
-                  {t('Footer.Become an Affiliate')}
-                </Link>
-              </li>
-              <li>
-                <Link href='/page/advertise'>
-                  {t('Footer.Advertise Your Products')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className='font-bold mb-2'>{t('Footer.Let Us Help You')}</h3>
-            <ul className='space-y-2'>
-              <li>
-                <Link href='/page/shipping'>
-                  {t('Footer.Shipping Rates & Policies')}
-                </Link>
-              </li>
-              <li>
-                <Link href='/page/returns-policy'>
-                  {t('Footer.Returns & Replacements')}
-                </Link>
-              </li>
-              <li>
-                <Link href='/page/help'>{t('Footer.Help')}</Link>
-              </li>
-            </ul>
-          </div>
+          {sections.map((section) => (
+            <div key={section.title}>
+              <h3 className='font-bold mb-2'>{section.title}</h3>
+              <ul className='space-y-2'>
+                {section.links.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
         <div className='border-t border-gray-800'>
           <div className='max-w-7xl mx-auto py-8 px-4 flex flex-col items-center space-y-4'>
             <div className='flex items-center space-x-4 flex-wrap md:flex-nowrap'>
               <Image
-                src='/icons/logo.svg'
+                src={site.logo}
                 alt={`${site.name} logo`}
                 width={48}
                 height={48}
@@ -114,7 +82,7 @@ export default function Footer() {
                   <SelectValue placeholder={t('Footer.Select a language')} />
                 </SelectTrigger>
                 <SelectContent>
-                  {locales.map((lang, index) => (
+                  {languageOptions.map((lang, index) => (
                     <SelectItem key={index} value={lang.code}>
                       <Link
                         className='w-full flex items-center gap-1'
@@ -162,8 +130,8 @@ export default function Footer() {
         <div className='flex justify-center text-sm'>
           <p> © {site.copyright}</p>
         </div>
-        <div className='mt-8 flex justify-center text-sm text-gray-400'>
-          {site.address} | {site.phone}
+        <div className='mt-8 flex justify-center text-sm text-gray-400 text-center px-4'>
+          {site.address} | {site.phone} | {site.email}
         </div>
       </div>
     </footer>

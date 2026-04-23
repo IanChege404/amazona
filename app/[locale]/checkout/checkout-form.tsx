@@ -41,25 +41,15 @@ import useSettingStore from '@/hooks/use-setting-store'
 import ProductPrice from '@/components/shared/product/product-price'
 
 const shippingAddressDefaultValues =
-  process.env.NODE_ENV === 'development'
-    ? {
-        fullName: 'Basir',
-        street: '1911, 65 Sherbrooke Est',
-        city: 'Montreal',
-        province: 'Quebec',
-        phone: '4181234567',
-        postalCode: 'H2X 1C4',
-        country: 'Canada',
-      }
-    : {
-        fullName: '',
-        street: '',
-        city: '',
-        province: '',
-        phone: '',
-        postalCode: '',
-        country: '',
-      }
+  {
+    fullName: '',
+    street: '',
+    city: '',
+    province: '',
+    phone: '',
+    postalCode: '',
+    country: '',
+  }
 
 const CheckoutForm = () => {
   const { toast } = useToast()

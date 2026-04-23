@@ -4,28 +4,51 @@ import { auth } from '@/auth'
 
 const f = createUploadthing()
 
+const requireAuth = async () => {
+  const session = await auth()
+
+  if (!session?.user?.id) {
+    throw new UploadThingError('Unauthorized')
+  }
+
+  return { userId: session.user.id, role: session.user.role }
+}
+
 // FileRouter for your app, can contain multiple FileRoutes
 export const ourFileRouter = {
   // Define as many FileRoutes as you like, each with a unique routeSlug
   imageUploader: f({ image: { maxFileSize: '4MB' } })
-    // Set permissions and file types for this FileRoute
+    .middleware(requireAuth)
+    .onUploadComplete(async ({ metadata }) => ({
+      uploadedBy: metadata.userId,
+    })),
+  productImage: f({ image: { maxFileSize: '4MB' } })
+    .middleware(requireAuth)
+    .onUploadComplete(async ({ metadata }) => ({
+      uploadedBy: metadata.userId,
+    })),
+  bannerImage: f({ image: { maxFileSize: '8MB' } })
     .middleware(async () => {
-      // This code runs on your server before upload
       const session = await auth()
 
-      // If you throw, the user will not be able to upload
-      if (!session) throw new UploadThingError('Unauthorized')
+      if (!session?.user?.id) {
+        throw new UploadThingError('Unauthorized')
+      }
 
-      // Whatever is returned here is accessible in onUploadComplete as `metadata`
-      return { userId: session?.user?.id }
+      if (session.user.role !== 'admin') {
+        throw new UploadThingError('Admin access required')
+      }
+
+      return { userId: session.user.id, role: session.user.role }
     })
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    .onUploadComplete(async ({ metadata, file }) => {
-      // This code RUNS ON YOUR SERVER after upload
-
-      // !!! Whatever is returned here is sent to the clientside `onClientUploadComplete` callback
-      return { uploadedBy: metadata.userId }
-    }),
+    .onUploadComplete(async ({ metadata }) => ({
+      uploadedBy: metadata.userId,
+    })),
+  vendorLogo: f({ image: { maxFileSize: '4MB' } })
+    .middleware(requireAuth)
+    .onUploadComplete(async ({ metadata }) => ({
+      uploadedBy: metadata.userId,
+    })),
 } satisfies FileRouter
 
 export type OurFileRouter = typeof ourFileRouter

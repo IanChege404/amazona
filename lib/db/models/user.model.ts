@@ -15,6 +15,16 @@ const userSchema = new Schema<IUser>(
     password: { type: String },
     image: { type: String },
     emailVerified: { type: Boolean, default: false },
+    paymentMethod: { type: String },
+    address: {
+      fullName: { type: String },
+      street: { type: String },
+      city: { type: String },
+      province: { type: String },
+      postalCode: { type: String },
+      country: { type: String },
+      phone: { type: String },
+    },
   },
   {
     timestamps: true,

@@ -1,6 +1,5 @@
 'use server'
 import { ISettingInput } from '@/types'
-import data from '../data'
 import Setting from '../db/models/setting.model'
 import { connectToDatabase } from '../db'
 import { formatError } from '../utils'
@@ -9,9 +8,13 @@ import { cookies } from 'next/headers'
 const globalForSettings = global as unknown as {
   cachedSettings: ISettingInput | null
 }
+
 export const getNoCachedSetting = async (): Promise<ISettingInput> => {
   await connectToDatabase()
   const setting = await Setting.findOne()
+  if (!setting) {
+    throw new Error('Missing site settings document')
+  }
   return JSON.parse(JSON.stringify(setting)) as ISettingInput
 }
 
@@ -20,17 +23,28 @@ export const getSetting = async (): Promise<ISettingInput> => {
     console.log('hit db')
     await connectToDatabase()
     const setting = await Setting.findOne().lean()
-    globalForSettings.cachedSettings = setting
-      ? JSON.parse(JSON.stringify(setting))
-      : data.settings[0]
+    if (!setting) {
+      throw new Error('Missing site settings document')
+    }
+    globalForSettings.cachedSettings = JSON.parse(JSON.stringify(setting))
   }
   return globalForSettings.cachedSettings as ISettingInput
+}
+
+export const getHeaderMenus = async () => {
+  const setting = await getSetting()
+  return setting.headerMenus ?? []
 }
 
 export const updateSetting = async (newSetting: ISettingInput) => {
   try {
     await connectToDatabase()
-    const updatedSetting = await Setting.findOneAndUpdate({}, newSetting, {
+    const existingSetting = await Setting.findOne().lean()
+    const mergedSetting = {
+      ...(existingSetting ? JSON.parse(JSON.stringify(existingSetting)) : {}),
+      ...newSetting,
+    }
+    const updatedSetting = await Setting.findOneAndUpdate({}, mergedSetting, {
       upsert: true,
       new: true,
     }).lean()

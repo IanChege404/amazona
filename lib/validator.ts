@@ -204,6 +204,24 @@ export const UserNameSchema = z.object({
   name: UserName,
 })
 
+export const UserAddressSchema = ShippingAddressSchema
+
+export const UserUpdateEmailSchema = z.object({
+  email: Email,
+  currentPassword: Password,
+})
+
+export const UserUpdatePasswordSchema = z
+  .object({
+    currentPassword: Password,
+    newPassword: Password,
+    confirmPassword: Password,
+  })
+  .refine((data) => data.newPassword === data.confirmPassword, {
+    message: "Passwords don't match",
+    path: ['confirmPassword'],
+  })
+
 // VENDOR
 export const VendorInputSchema = z.object({
   userId: MongoId,
@@ -298,6 +316,18 @@ export const SiteLanguageSchema = z.object({
   name: z.string().min(1, 'Name is required'),
   code: z.string().min(1, 'Code is required'),
 })
+export const HeaderMenuSchema = z.object({
+  name: z.string().min(1, 'Name is required'),
+  href: z.string().min(1, 'Href is required'),
+})
+export const FooterLinkSchema = z.object({
+  name: z.string().min(1, 'Name is required'),
+  href: z.string().min(1, 'Href is required'),
+})
+export const FooterSectionSchema = z.object({
+  title: z.string().min(1, 'Title is required'),
+  links: z.array(FooterLinkSchema).min(1, 'At least one link is required'),
+})
 export const CarouselSchema = z.object({
   title: z.string().min(1, 'title is required'),
   url: z.string().min(1, 'url is required'),
@@ -364,6 +394,9 @@ export const SettingInputSchema = z.object({
   availableLanguages: z
     .array(SiteLanguageSchema)
     .min(1, 'At least one language is required'),
+
+  headerMenus: z.array(HeaderMenuSchema).optional(),
+  footerSections: z.array(FooterSectionSchema).optional(),
 
   carousels: z
     .array(CarouselSchema)

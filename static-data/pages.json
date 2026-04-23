@@ -1,0 +1,80 @@
+[
+  {
+    "title": "About Us",
+    "slug": "about-us",
+    "content": "Welcome to NxtAmzn, your destination for trusted products at fair prices. Our goal is simple: make online shopping easy, transparent, and reliable from discovery to delivery.\n\nWe curate practical, high-demand products across apparel, shoes, watches, and everyday categories while keeping quality and value at the center. Every listing includes clear pricing, inventory, and delivery options so you can shop with confidence.\n\nOur team focuses on fast fulfillment, secure checkout, and responsive support. As we grow, we remain committed to improving selection, delivery performance, and customer experience every day.",
+    "isPublished": true
+  },
+  {
+    "title": "Contact Us",
+    "slug": "contact-us",
+    "content": "We’re here to help! If you have any questions, concerns, or feedback, please don’t hesitate to reach out to us. Our team is ready to assist you and ensure you have the best shopping experience.\n\n**Customer Support**\nFor inquiries about orders, products, or account-related issues, contact our customer support team:\n- **Email:** support@example.com\n- **Phone:** +1 (123) 456-7890\n- **Live Chat:** Available on our website from 9 AM to 6 PM (Monday to Friday).\n\n**Head Office**\nFor corporate or business-related inquiries, reach out to our headquarters:\n- **Address:** 1234 E-Commerce St, Suite 567, Business City, BC 12345\n- **Phone:** +1 (987) 654-3210\n\nWe look forward to assisting you! Your satisfaction is our priority.\n",
+    "isPublished": true
+  },
+  {
+    "title": "Help",
+    "slug": "help",
+    "content": "Welcome to our Help Center! We're here to assist you with any questions or concerns you may have while shopping with us. Whether you need help with orders, account management, or product inquiries, this page provides all the information you need to navigate our platform with ease.\n\n**Placing and Managing Orders**\nPlacing an order is simple and secure. Browse our product categories, add items to your cart, and proceed to checkout. Once your order is placed, you can track its status through your account under the \"My Orders\" section. If you need to modify or cancel your order, please contact us as soon as possible for assistance.\n\n**Shipping and Returns**\nWe offer a variety of shipping options to suit your needs, including standard and express delivery. For detailed shipping costs and delivery timelines, visit our Shipping Policy page. If you're not satisfied with your purchase, our hassle-free return process allows you to initiate a return within the specified timeframe. Check our Returns Policy for more details.\n\n**Account and Support**\nManaging your account is easy. Log in to update your personal information, payment methods, and saved addresses. If you encounter any issues or need further assistance, our customer support team is available via email, live chat, or phone. Visit our Contact Us page for support hours and contact details.",
+    "isPublished": true
+  },
+  {
+    "title": "Privacy Policy",
+    "slug": "privacy-policy",
+    "content": "We value your privacy and are committed to protecting your personal information. This Privacy Notice explains how we collect, use, and share your data when you interact with our services. By using our platform, you consent to the practices described herein.\n\nWe collect data such as your name, email address, and payment details to provide you with tailored services and improve your experience. This information may also be used for marketing purposes, but only with your consent. Additionally, we may share your data with trusted third-party providers to facilitate transactions or deliver products.\n\nYour data is safeguarded through robust security measures to prevent unauthorized access. However, you have the right to access, correct, or delete your personal information at any time. For inquiries or concerns regarding your privacy, please contact our support team.",
+    "isPublished": true
+  },
+  {
+    "title": "Conditions of Use",
+    "slug": "conditions-of-use",
+    "content": "By using NxtAmzn, you agree to these terms. You are responsible for maintaining accurate account information and for all activities that occur under your account.\n\nProduct availability and pricing may change without notice. While we work to keep product information accurate, occasional errors may occur and we reserve the right to correct them, cancel affected orders, and issue refunds when required.\n\nAll purchases are subject to our shipping, returns, and privacy policies. Misuse of the platform, fraudulent activity, or violations of applicable law may result in account suspension.",
+    "isPublished": true
+  },
+  {
+    "title": "Customer Service",
+    "slug": "customer-service",
+    "content": "Our support team is here to help with orders, returns, delivery updates, and account issues.\n\n**Support Channels**\n- **Email:** support@example.com\n- **Phone:** +1 (123) 456-7890\n- **Live Chat:** Available during business hours\n\nFor faster resolution, include your order number and the email used at checkout. We typically respond within one business day.",
+    "isPublished": true
+  },
+  {
+    "title": "Returns Policy",
+    "slug": "returns-policy",
+    "content": "Most items can be returned within 30 days of delivery if they are unused and in original condition.\n\nTo start a return, contact support with your order number and reason for return. Once approved, we will provide return instructions. Refunds are issued to the original payment method after inspection.\n\nItems that are damaged, used, or missing original packaging may be partially refunded or rejected. Final-sale and hygiene-sensitive items are not eligible unless defective.",
+    "isPublished": true
+  },
+  {
+    "title": "Careers",
+    "slug": "careers",
+    "content": "We’re building a customer-first ecommerce experience and are always looking for curious, driven people.\n\nCurrent opportunities are shared through our hiring updates. To express interest, send your resume and role preference to careers@example.com.",
+    "isPublished": true
+  },
+  {
+    "title": "Blog",
+    "slug": "blog",
+    "content": "Welcome to the NxtAmzn Blog. We share product guides, shopping tips, and platform updates to help you make informed purchases.\n\nNew posts are published regularly, so check back for updates.",
+    "isPublished": true
+  },
+  {
+    "title": "Sell Products",
+    "slug": "sell",
+    "content": "Interested in selling on NxtAmzn? We support vendors with onboarding, product listing tools, and order management workflows.\n\nTo get started, submit a vendor application and include your business details, product categories, and fulfillment capabilities.",
+    "isPublished": true
+  },
+  {
+    "title": "Become Affiliate",
+    "slug": "become-affiliate",
+    "content": "Our affiliate program rewards partners for referring qualified traffic and orders.\n\nTo apply, share your audience channels and promotion strategy. Approved affiliates receive tracking links and performance reporting.",
+    "isPublished": true
+  },
+  {
+    "title": "Advertise Your Products",
+    "slug": "advertise",
+    "content": "Boost your product visibility with placement opportunities across key storefront areas.\n\nCampaign options include category visibility, seasonal highlights, and promotional placement. Contact ads@example.com for available packages.",
+    "isPublished": true
+  },
+  {
+    "title": "Shipping Rates & Policies",
+    "slug": "shipping",
+    "content": "Shipping cost and delivery speed vary by destination, item type, and selected delivery option at checkout.\n\nOrders are processed as quickly as possible, and tracking details are shared once shipped. Delivery estimates are shown during checkout and in your order details.",
+    "isPublished": true
+  }
+]
