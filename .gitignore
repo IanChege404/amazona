@@ -39,4 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.github/
+.github/agents/
+/storage/*.json
+!/storage/.gitkeep

@@ -25,7 +25,9 @@
     "docker:prod": "docker run -p 3000:3000 --env-file .env.local amazona:latest",
     "docker:stop": "docker-compose down",
     "docker:clean": "docker-compose down -v",
-    "docker:rebuild": "docker-compose up -d --build"
+    "docker:rebuild": "docker-compose up -d --build",
+    "seed:e2e": "npx tsx ./lib/db/seed-e2e.ts",
+    "e2e:ci": "playwright test --project=chromium"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.1",

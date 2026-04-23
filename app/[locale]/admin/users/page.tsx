@@ -26,7 +26,7 @@ export default async function AdminUser(props: {
 }) {
   const searchParams = await props.searchParams
   const session = await auth()
-  if (session?.user.role !== 'Admin')
+  if (session?.user.role?.toLowerCase() !== 'admin')
     throw new Error('Admin permission required')
   const page = Number(searchParams.page) || 1
   const users = await getAllUsers({

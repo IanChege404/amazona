@@ -27,6 +27,7 @@ import { IProductInput } from '@/types'
 import { AIDescriptionButton } from '@/components/vendor/ai-description-button'
 import { BackgroundRemoveButton } from '@/components/vendor/background-remove-button'
 import ProductImageUploader from '@/components/shared/product-image-uploader'
+import { useState } from 'react'
 
 const productDefaultValues: IProductInput =
   {
@@ -70,6 +71,7 @@ const VendorProductForm = ({ vendorId, vendorName }: VendorProductFormProps) => 
   })
 
   const { toast } = useToast()
+  const [imageUrl, setImageUrl] = useState('')
 
   async function onSubmit(values: IProductInput) {
     // Ensure vendorId and vendorName are set
@@ -225,22 +227,46 @@ const VendorProductForm = ({ vendorId, vendorName }: VendorProductFormProps) => 
               <FormItem className="w-full">
                 <FormLabel>Product Images</FormLabel>
                 <FormControl>
-                  <ProductImageUploader
-                    images={images}
-                    onChange={(nextImages) => form.setValue('images', nextImages)}
-                    endpoint="productImage"
-                    renderExtraActions={(image) => (
-                      <BackgroundRemoveButton
-                        imageUrl={image}
-                        onResult={(base64: string) => {
-                          form.setValue(
-                            'images',
-                            images.map((img: string) => (img === image ? base64 : img))
-                          )
-                        }}
+                  <div className='space-y-3'>
+                    <ProductImageUploader
+                      images={images}
+                      onChange={(nextImages) => form.setValue('images', nextImages)}
+                      endpoint='productImage'
+                      renderExtraActions={(image) => (
+                        <BackgroundRemoveButton
+                          imageUrl={image}
+                          onResult={(base64: string) => {
+                            form.setValue(
+                              'images',
+                              images.map((img: string) => (img === image ? base64 : img))
+                            )
+                          }}
+                        />
+                      )}
+                    />
+                    <div className='flex gap-2'>
+                      <Input
+                        placeholder='Or paste image URL (e.g. /images/p11-1.jpg)'
+                        value={imageUrl}
+                        onChange={(event) => setImageUrl(event.target.value)}
                       />
-                    )}
-                  />
+                      <Button
+                        type='button'
+                        variant='outline'
+                        onClick={() => {
+                          const trimmedUrl = imageUrl.trim()
+                          if (!trimmedUrl) return
+                          form.setValue('images', [...images, trimmedUrl], {
+                            shouldDirty: true,
+                            shouldValidate: true,
+                          })
+                          setImageUrl('')
+                        }}
+                      >
+                        Add
+                      </Button>
+                    </div>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
