@@ -48,7 +48,7 @@ const CheckoutPaymentPage = async (props: {
       order={order}
       paypalClientId={paypalClientId}
       clientSecret={client_secret}
-      isAdmin={session?.user?.role === 'Admin' || false}
+      isAdmin={session?.user?.role?.toLowerCase() === 'admin' || false}
     />
   )
 }

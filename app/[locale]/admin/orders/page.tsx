@@ -29,7 +29,7 @@ export default async function OrdersPage(props: {
   const { page = '1' } = searchParams
 
   const session = await auth()
-  if (session?.user.role !== 'Admin')
+  if (session?.user.role?.toLowerCase() !== 'admin')
     throw new Error('Admin permission required')
 
   const orders = await getAllOrders({

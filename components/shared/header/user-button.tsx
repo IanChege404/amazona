@@ -53,7 +53,7 @@ export default async function UserButton() {
                 <DropdownMenuItem>{t('Header.Your orders')}</DropdownMenuItem>
               </Link>
 
-              {session.user.role === 'Admin' && (
+              {session.user.role?.toLowerCase() === 'admin' && (
                 <Link className='w-full' href='/admin/overview'>
                   <DropdownMenuItem>{t('Header.Admin')}</DropdownMenuItem>
                 </Link>
