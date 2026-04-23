@@ -26,6 +26,7 @@ import {
   sendPaymentReceivedEmail,
   sendOrderDeliveryEmail,
 } from './email.actions'
+import { integrateOrderCreated, integrateOrderPaid } from '@/lib/webhooks/integration'
 
 // CREATE
 export const createOrder = async (clientSideCart: Cart) => {
@@ -39,6 +40,11 @@ export const createOrder = async (clientSideCart: Cart) => {
       clientSideCart,
       session.user.id!
     )
+
+    // Trigger webhook for order created event (non-blocking)
+    integrateOrderCreated(createdOrder).catch((err) => {
+      console.warn('[WEBHOOK] Order creation webhook failed (non-blocking):', err)
+    })
 
     // Get user and setting for email
     const user = await User.findById(session.user.id).lean()

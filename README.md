@@ -115,6 +115,43 @@ https://next-mongo-ecommerce-final.vercel.app/
 - [36-create-settings-page](./lessons/36-create-settings-page.md)
 - [37-make-website-multilingual](./lessons/37-make-website-multilingual.md)
 
+## Advanced Features (Weeks 19-24) ✨
+
+### ✅ Week 19-20: Webhook System
+- Complete webhook infrastructure for order, payment, product events
+- Stripe webhook integration (payment_intent, charge, payout events)
+- Webhook retry logic with exponential backoff (1min → 24hrs)
+- HMAC-SHA256 signature verification for security
+- [WEEK19-20_WEBHOOKS_SETUP.md](./WEEK19-20_WEBHOOKS_SETUP.md)
+
+### ✅ Week 21: Webhook Analytics Dashboard
+- Real-time metrics for webhook delivery success rate
+- Event type breakdown and status distribution charts
+- Trends tracking with date range filtering
+- Detailed event log viewer with pagination
+- [WEEK21_ANALYTICS_SETUP.md](./WEEK21_ANALYTICS_SETUP.md)
+
+### ✅ Week 22: Custom Vendor Webhooks
+- Vendors can subscribe to marketplace events
+- Webhook testing functionality and health status
+- [WEEK22_VENDOR_WEBHOOKS_SETUP.md](./WEEK22_VENDOR_WEBHOOKS_SETUP.md)
+
+### ✅ Week 23: Webhook Replay & Retry UI
+- Manual webhook replay for failed deliveries
+- Batch replay creation with progress tracking
+- [WEEK23_WEBHOOK_REPLAY_UI.md](./WEEK23_WEBHOOK_REPLAY_UI.md)
+
+### ✅ Week 24: Automated Reconciliation
+- Automatic discrepancy detection and resolution
+- Real-time reconciliation dashboard
+- [WEEK24_AUTOMATED_RECONCILIATION.md](./WEEK24_AUTOMATED_RECONCILIATION.md)
+
+## Implementation Guides
+
+- **[IMPLEMENTATION_WEEKS_19-24.md](./IMPLEMENTATION_WEEKS_19-24.md)** - Complete implementation roadmap
+- **[PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md)** - Production deployment checklist
+- **[WEBHOOK_TROUBLESHOOTING.md](./WEBHOOK_TROUBLESHOOTING.md)** - Webhook debugging guide
+
 ## Contact Developer
 
 Email: basir.jafarzadeh@gmail.com
